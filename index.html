@@ -2,15 +2,20 @@
 <html>
 <head>
 	<link rel="shortcut icon" type="png" href="images/icon/favicon.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
 	<title>LearnEd</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 	<script>
-		document.querySelector(window).addEventListener('scroll', function(){
-  			if(document.querySelector(window).scrollTop){
-  			  document.querySelector('nav').classList.add('black');
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
  			 }else {
- 		   document.querySelector('nav').removeClass('black');
+ 		   $('nav').removeClass('black');
  		 }
 		})
 	</script>
