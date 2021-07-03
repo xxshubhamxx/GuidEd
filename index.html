@@ -9,13 +9,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="script.js"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 	<script>
-		$(window).on('scroll', function(){
-  			if($(window).scrollTop()){
-  			  $('nav').addClass('black');
+		document.querySelector(window).addEventListener('scroll', function(){
+  			if(document.querySelector(window).scrollTop){
+  			  document.querySelector('nav').classList.add('black');
  			 }else {
- 		   $('nav').removeClass('black');
+ 		   document.querySelector('nav').removeClass('black');
  		 }
 		})
 	</script>
