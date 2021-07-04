@@ -10,7 +10,6 @@
 
 html {
 	scroll-behavior: smooth;
-	margin:auto;
 }
 body {
 	background: #FFF;
@@ -840,3 +839,8 @@ footer .btn:hover {
 	opacity: .7;
 }
 
+
+
+html {
+	scroll-behavior: smooth;
+}
