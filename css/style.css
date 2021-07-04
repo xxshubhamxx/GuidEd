@@ -842,3 +842,8 @@ footer .btn:hover {
 	opacity: .7;
 }
 
+
+
+html {
+	scroll-behavior: smooth;
+}
