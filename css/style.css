@@ -11,6 +11,9 @@
 html {
 	scroll-behavior: smooth;
 }
+html {
+	scroll-behavior: smooth;
+}
 body {
 	background: #FFF;
 	font-family: 'Open Sans', sans-serif;
