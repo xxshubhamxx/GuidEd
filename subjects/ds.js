@@ -7,7 +7,7 @@ function clicked1(){
     document.getElementById("mh").classList.add("animate__backInLeft");
     document.getElementById("md").classList.add("animate__backInRight");
     document.getElementById("usage").classList.add("none");
-    document.getElementById("implementaion").classList.add("none");
+    document.getElementById("implementation").classList.add("none");
     document.getElementById("examples").classList.add("none");
 }
 function clicked2(){
@@ -15,7 +15,7 @@ function clicked2(){
     document.getElementById("uh").classList.add("animate__backInLeft");
     document.getElementById("ud").classList.add("animate__backInRight");
     document.getElementById("meaning").classList.add("none");
-    document.getElementById("implementaion").classList.add("none");
+    document.getElementById("implementation").classList.add("none");
     document.getElementById("examples").classList.add("none");
 }
 function clicked3(){
