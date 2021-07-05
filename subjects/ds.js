@@ -1,9 +1,10 @@
-// const e1=document.getElementById("meaning");
-// const e2=document.getElementById("usage");
-// const e3=document.getElementById("implementation");
-// const e4=document.getElementById("none");
+const e1=document.getElementById("meaning");
+const e2=document.getElementById("usage");
+const e3=document.getElementById("implementation");
+const e4=document.getElementById("examples");
+
 function clicked1(){
-    document.getElementById("meaning").classList.remove("none");
+    e1.classList.remove("none");
     document.getElementById("mh").classList.add("animate__backInLeft");
     document.getElementById("md").classList.add("animate__backInRight");
     document.getElementById("usage").classList.add("none");
