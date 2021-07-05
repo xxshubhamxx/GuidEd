@@ -873,7 +873,7 @@ footer .btn:hover {
 	opacity: .7;
 }
 
-img{
+.logo,img{
 	filter:invert(1) !important;
 }
 
