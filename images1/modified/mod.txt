@@ -1,3 +1,0 @@
-main
-home.html
-login.html
