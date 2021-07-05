@@ -1,0 +1,89 @@
+.accordion {
+    background: rgb(255, 255, 255);
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: 10px 0;
+    border: 1px solid #f7473c;
+    border-radius: 5px;
+  }
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active,
+  .accordion:hover {
+    background: linear-gradient(to right, #fa4b37, #df2771);
+    color: white;
+  }
+
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  .accordion-wrapper {
+    max-width: 1200px;
+    margin: 30px auto;
+  }
+
+  .section-heading {
+    margin: 100px 0 0;
+  }
+
+  .accordion:after {
+    content: "\02795";
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+  }
+
+  .how-to-prep {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .how-to-prep-steps {
+    max-width: 800px;
+    margin: 40px auto;
+  }
+
+  .how-to-prep-steps h3 {
+    margin: 10px 0;
+    display: inline-block;
+    font-size: 32px;
+    background: linear-gradient(to right, #fa4b37, #df2771);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  .how-to-prep-steps p {
+    line-height: 30px;
+  }
+
+  .how-to-prep-steps ul {
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+
+  .how-to-prep-steps {
+    background: white;
+    padding: 2em;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
