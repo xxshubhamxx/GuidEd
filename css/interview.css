@@ -64,6 +64,7 @@
 
   .how-to-prep-steps h3 {
     margin: 10px 0;
+    width: 100%;
     display: inline-block;
     font-size: 32px;
     background: linear-gradient(to right, #fa4b37, #df2771);
@@ -86,6 +87,11 @@
     padding: 2em;
     border-radius: 5px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+
+  p,li,.common-questions{
+    font-weight: bold;
+    font-size: 2vh;
   }
 
   html{
