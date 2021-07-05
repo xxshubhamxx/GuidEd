@@ -26,9 +26,9 @@ html{
     width: 30%;
 }
 
-button{
+.options button{
     height: 70px;
-    width: 150px;
+    width: 200px;
     margin: 10px;
     background-color: cyan;
 }
@@ -42,8 +42,14 @@ button:hover{
     display: none !important;
 }
 
+.content{
+    margin-top: 200px;
+}
 
 
+html,button,.content{
+    filter: invert(1);
+}
 
 
 :root {
