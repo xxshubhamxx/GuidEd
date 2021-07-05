@@ -87,3 +87,13 @@
     border-radius: 5px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   }
+
+  html{
+    filter: invert(1);
+  }
+ .ccardbox img{
+    filter: invert(1);
+  }
+  footer{
+    filter: invert(1);
+  }
