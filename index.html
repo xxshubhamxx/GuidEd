@@ -34,8 +34,27 @@
 				<li><a href="#explore_section">Explore</a></li>
 				<li><a href="#contactus_section">Contact</a></li>
 			</ul>
-			<div class="srch"><input type="text" class="search" placeholder="Search here..."><img
-					src="images/icon/search.png" alt="search" onclick="slide()"></div>
+			<div class="srch">
+				<script>
+					function gsearch() {
+						var search_data = document.getElementById("search_data").value;
+						// document.location.replace("https://www.google.com/search?q=" + search_data + "");    //we are unable to go back so we need to open it in new tab and this can be done by the code of next line:
+						window.open("https://www.google.com/search?q=" + search_data + "" , '_blank').focus();
+					}
+
+					function myfunc() {
+						document.addEventListener("keyup", function (event) {
+							if (event.keyCode === 13) {
+								gsearch();
+							}
+						});
+					}
+
+				</script>
+
+				<input type="text" class="search" id="search_data" placeholder="Search here..." onfocus="myfunc()">
+				<img src="images/icon/search.png" alt="search" onclick="gsearch()">
+			</div>
 			<a class="get-started" href="login.html">Get Started</a>
 			<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
 		</nav>
@@ -78,21 +97,20 @@
 		<center>
 			<div class="cbox">
 
-				<div class="det"><a href="pages/computer_courses.html"><img
-							src="images/courses/computer.png">Computer Courses</a></div>
+				<div class="det"><a href="pages/computer_courses.html"><img src="images/courses/computer.png">Computer
+						Courses</a></div>
 				<div class="det det-last"><a href="pages/computer_courses.html#projects"><img
 							src="images/courses/projects.png">Projects</a></div>
 				<div class="det"><a href="pages/quiz.html"><img src="images/courses/d1.png">Daily Quiz</a></div>
 				<div class="cbox">
 
-					<div class="det"><a href="pages/ds.html"><img
-								src="images/courses/data.png">Data Structures</a></div>
+					<div class="det"><a href="pages/ds.html"><img src="images/courses/data.png">Data Structures</a>
+					</div>
 					<div class="det"><a href="pages/computer_courses.html#algo"><img
 								src="images/courses/algo.png">Algorithm</a></div>
 
-					<div class="det"><a
-							href="pages/interview.html"><img
-								src="images/courses/paper.png">Interview Questions</a></div>
+					<div class="det"><a href="pages/interview.html"><img src="images/courses/paper.png">Interview
+							Questions</a></div>
 				</div>
 
 			</div>
@@ -205,7 +223,8 @@
 				<center>
 					<div class="card-title">Lohith</div>
 					<div id="detail">
-						<p>“ Education is the movement from darkness to light. It is the ability to listen to almost anything in the world without losing your temper or your self-confidence “</p>
+						<p>“ Education is the movement from darkness to light. It is the ability to listen to almost
+							anything in the world without losing your temper or your self-confidence “</p>
 						<div class="duty"></div>
 						<a href="" target="_blank"><button class="btn-Lohith">Follow +</button></a>
 					</div>
@@ -216,7 +235,8 @@
 				<center>
 					<div class="card-title">Bhargav</div>
 					<div id="detail">
-						<p>“ Education is the movement from darkness to light. It is the ability to listen to almost anything in the world without losing your temper or your self-confidence “</p>
+						<p>“ Education is the movement from darkness to light. It is the ability to listen to almost
+							anything in the world without losing your temper or your self-confidence “</p>
 						<div class="duty"></div>
 						<a href="" target="_blank"><button class="btn-Bhargav">Follow +</button></a>
 					</div>
@@ -227,7 +247,8 @@
 				<center>
 					<div class="card-title">Sivesh</div>
 					<div id="detail">
-						<p>“ Education is the movement from darkness to light. It is the ability to listen to almost anything in the world without losing your temper or your self-confidence “</p>
+						<p>“ Education is the movement from darkness to light. It is the ability to listen to almost
+							anything in the world without losing your temper or your self-confidence “</p>
 						<div class="duty"></div>
 						<a href="" target="_blank"><button class="btn-Sivesh">Follow +</button></a>
 					</div>
@@ -305,7 +326,8 @@
 				<div class="rev-cont">
 					<p id="title">Review:</p>
 					<p id="content">
-						I did Java Fundamenetal course with Abhiram Sir. It was a great experience. The brain teasers and
+						I did Java Fundamenetal course with Abhiram Sir. It was a great experience. The brain teasers
+						and
 						assignments, actually the whole lot of content was really good. Some problems were challenging
 						yet interesting. Was explained very well where ever I stuck.
 					</p>
@@ -323,7 +345,8 @@
 				<div class="rev-cont">
 					<p id="title">Review:</p>
 					<p id="content">
-						When I was watching "Dear Zindagi", I could relate Sharukh Khan to Bhargav Bhaiya. The way Sharukh
+						When I was watching "Dear Zindagi", I could relate Sharukh Khan to Bhargav Bhaiya. The way
+						Sharukh
 						Khan was giving life lessons to Alia Bhatt, in the same way Bhargav Bhaiya will give coding life
 						lessons which will guide you throughout your code life.
 					</p>
@@ -341,7 +364,8 @@
 				<div class="rev-cont">
 					<p id="title">Review:</p>
 					<p id="content">
-						Edu-Learning was an amazing experience for me. I belong to electronics department and had a little
+						Edu-Learning was an amazing experience for me. I belong to electronics department and had a
+						little
 						experience in coding but I think it has helped me think things through in a much more analytical
 						manner. Coding is important no matter which branch you are in.
 					</p>
@@ -441,9 +465,11 @@
 				</div><br><br>
 				<p class="rights-text">Copyright © 2021 Created By Team 7. All Rights Reserved.</p>
 				<br>
-				<p><img src="images/icon/location.png"> <span class="change-filter"> Amrita School of Engineering<br>Bangalore, Karnataka </span></p><br>
-				<p><img src="images/icon/phone.png"> <span class="change-filter">+91-1234-567-890</span><br><img src="images/icon/mail.png">&nbsp;&nbsp;
-					<span class="change-filter">	contactteam@Edu-Learning.edu</span>
+				<p><img src="images/icon/location.png"> <span class="change-filter"> Amrita School of
+						Engineering<br>Bangalore, Karnataka </span></p><br>
+				<p><img src="images/icon/phone.png"> <span class="change-filter">+91-1234-567-890</span><br><img
+						src="images/icon/mail.png">&nbsp;&nbsp;
+					<span class="change-filter"> contactteam@Edu-Learning.edu</span>
 				</p>
 			</div>
 			<div class="right-col">
