@@ -10,9 +10,7 @@
 
 html {
 	scroll-behavior: smooth;
-}
-html {
-	scroll-behavior: smooth;
+	filter:invert(1);
 }
 body {
 	background: #FFF;
@@ -87,7 +85,7 @@ nav ul li a:hover {
 .get-started {
 	margin-left: 50px;
 	padding: 5px 20px;
-	border: 2px solid #DF2771;
+	border: 2px solid #0044ff;
 	border-radius: 20px;
 	text-decoration: none;
 	
@@ -395,8 +393,8 @@ a, button {
 	margin-bottom: 50px;
 }
 .totalcard .card {
-	margin: 50px;
-	width: 300px;
+	margin: 10px;
+	width: 250px;
 	border-radius: 10px;
 	background: #fff;
 }
@@ -405,10 +403,19 @@ a, button {
 					0 0 10px rgba(0,0,0,0.3);
 }
 .card:nth-child(1){
-	border-top: 5px solid green;
+	border-top: 5px solid rgb(0, 187, 41);
 }
 .card:nth-child(2){
 	border-top: 5px solid blue;
+}
+.card:nth-child(3){
+	border-top: 5px solid rgb(177, 0, 0);
+}
+.card:nth-child(4){
+	border-top: 5px solid rgb(152, 186, 0);
+}
+.card:nth-child(5){
+	border-top: 5px solid rgb(142, 0, 177);
 }
 .card:nth-child(1):hover {
 	box-shadow: inset 0px 0px 10px rgba(0,255,0,0.5),
@@ -417,6 +424,18 @@ a, button {
 .card:nth-child(2):hover {
 	box-shadow: inset 0px 0px 10px rgba(0,0,255,0.5),
 				1px 1px 30px rgba(0,0,255,0.5);
+}
+.card:nth-child(3):hover {
+	box-shadow: inset 0px 0px 10px rgba(255, 0, 0, 0.5),
+				1px 1px 30px rgba(255, 0, 0, 0.5);
+}
+.card:nth-child(4):hover {
+	box-shadow: inset 0px 0px 10px rgba(152, 186, 0, 0.5),
+				1px 1px 30px rgba(152, 186, 0, 0.5);
+}
+.card:nth-child(5):hover {
+	box-shadow: inset 0px 0px 10px rgba(122, 0, 159, 0.5),
+				1px 1px 30px rgba(122, 0, 159, 0.5);
 }
 .totalcard .card img {
 	width: 100px;
@@ -445,7 +464,7 @@ a, button {
 	border-radius: 10px;
 	border-style: none;
 	border: 1px solid black;
-	padding: 9px 25px;
+	padding: 9px 5px;
 	cursor: pointer;
 	transition-duration: .4s;
 }
@@ -457,12 +476,24 @@ a, button {
 	margin-left: 90px;
 	align-self: center;
 }
-.btn-roshan:hover {
-	background: rgba(0,255,0,0.7);
+.btn-Abhiram:hover {
+	background: rgba(0,255,0,0.5);
 	color: #fff;
 }
-.btn-roshan2:hover {
+.btn-Shubham:hover {
 	background: rgba(0,0,255,0.5);
+	color: #fff;
+}
+.btn-Lohith:hover {
+	background: rgba(255, 0, 0, 0.5);
+	color: #fff;
+}
+.btn-Bhargav:hover {
+	background: rgba(152, 186, 0, 0.5);
+	color: #fff;
+}
+.btn-Sivesh:hover {
+	background: rgba(122, 0, 159, 0.5);
 	color: #fff;
 }
 .card-title {
@@ -842,8 +873,6 @@ footer .btn:hover {
 	opacity: .7;
 }
 
-
-
-html {
-	scroll-behavior: smooth;
+img{
+	filter:invert(1) !important;
 }
