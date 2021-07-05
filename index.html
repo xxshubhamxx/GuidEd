@@ -10,6 +10,18 @@
 	<link rel="stylesheet" href="css/explore.css">
 	<script type="text/javascript" src="js/script.js"></script>
 	<script>
+		function gsearch() {
+			var search_data = document.getElementById("search_data").value;
+			// document.location.replace("https://www.google.com/search?q=" + search_data + "");    //we are unable to go back so we need to open it in new tab and this can be done by the code of next line:
+			window.open("https://www.google.com/search?q=" + search_data + "", '_blank').focus();
+		}
+		function myfunc() {
+			search_data.addEventListener("keyup", function (event) {
+				if (event.keyCode === 13) {
+					gsearch();
+				}
+			});
+		}
 		const nav = document.getElementsByTagName("nav")[0];
 		window.addEventListener("scroll", function () {
 			const top = window.pageYOffset;
@@ -35,23 +47,6 @@
 				<li><a href="#contactus_section">Contact</a></li>
 			</ul>
 			<div class="srch">
-				<script>
-					function gsearch() {
-						var search_data = document.getElementById("search_data").value;
-						// document.location.replace("https://www.google.com/search?q=" + search_data + "");    //we are unable to go back so we need to open it in new tab and this can be done by the code of next line:
-						window.open("https://www.google.com/search?q=" + search_data + "" , '_blank').focus();
-					}
-
-					function myfunc() {
-						document.addEventListener("keyup", function (event) {
-							if (event.keyCode === 13) {
-								gsearch();
-							}
-						});
-					}
-
-				</script>
-
 				<input type="text" class="search" id="search_data" placeholder="Search here..." onfocus="myfunc()">
 				<img src="images/icon/search.png" alt="search" onclick="gsearch()">
 			</div>
