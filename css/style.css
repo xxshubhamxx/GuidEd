@@ -345,7 +345,7 @@ a, button {
 	transform: translateX(0px);
 }
 
-/*POPULAR SUBJECTS*/
+/*POPULAR PAGES*/
 .cbox {
 	position: relative;
 	width: 100%;
@@ -452,6 +452,7 @@ a, button {
 }
 #detail p{
 	font-size: 15px;
+	font-weight: bolder;
 	line-height: 25px;
 	font-variant: small-caps;
 	text-align: center;
@@ -459,7 +460,7 @@ a, button {
 	margin-bottom: 0px;
 	margin-top: 0px;
 }
-#detail button {
+#detail button{
 	outline: none;
 	border-radius: 10px;
 	border-style: none;
@@ -468,7 +469,7 @@ a, button {
 	cursor: pointer;
 	transition-duration: .4s;
 }
-#detail a {
+#detail a{
 	bottom: 80px;
 	text-decoration: none;
 	margin-bottom: 30px;
@@ -501,48 +502,6 @@ a, button {
 	color: #343A40;
 	padding: 20px;
 	font-weight: 700;
-}
-
-/*Service Section*/
-/*Service Section*/
-.service-swipe {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)),url("images/extra/b3.jpg");
-	background-size: cover;
-	background-attachment: fixed;
-}
-.service-swipe .s-card img {
-	width: 100px;
-}
-.service-swipe a {
-	padding: 0;
-	margin: 40px 10px;
-}
-.service-swipe .s-card {
-	display: flex;
-	justify-content: space-around;
-	padding: 10px;
-	align-items: center;
-	text-align: center;
-	width: 350px;
-	height: 200px;
-	box-shadow: inset 0 0 20px rgba(255,255,255,0.05),
-					0 0 50px rgba(0,0,0,0.8);
-	border-radius: 5px;
-	cursor: pointer;
-	transition-duration: .5s;
-}
-.service-swipe .s-card p {
-	color: #f2f2f2;
-	font-size: 1.2em;
-	font-family: 'Open Sans',sans-serif;
-}
-.service-swipe .s-card:hover {
-	box-shadow: 0 0 50px rgba(255,255,255,0.8);
-	transform: translateY(-10px);
 }
 
 /*Contact Us Section*/
