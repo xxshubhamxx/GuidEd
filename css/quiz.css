@@ -9,6 +9,7 @@
 }
 html {
 	scroll-behavior: smooth;
+	/* filter: invert(1); */
 }
 body {
 	background: url(../images/extra/b1.jpg);
@@ -29,13 +30,9 @@ body {
 }
 
 /*NAVIGATION BAR*/
-
-:root{
-	--numvar: 1;
-}
 .nav
 {
-	filter: invert(var(--numvar));
+	filter: invert(1);
 	width: 100%;
 	background-color: #fff;
 	display: flex;
@@ -50,7 +47,7 @@ body {
 }
 
 li img{
-	filter: invert(var(--numvar));
+	filter: invert(1);
 }
 
 .nav li, a, button
@@ -195,7 +192,7 @@ li img{
 }
 /*Different Topics Container*/
 .left-side {
-	filter: invert(var(--numvar));
+	filter: invert(1);
 	background: #FFF;
 	height: 100%;
 	width: 25%;
@@ -242,7 +239,7 @@ li img{
 	border: none;
 }
 .main-frame {
-	filter: invert(var(--numvar));
+	filter: invert(1);
 	background: url(../images/extra/quiz.jpg);
 	background-size: cover;
 	background-position: center;
