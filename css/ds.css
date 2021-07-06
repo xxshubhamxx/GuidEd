@@ -15,7 +15,6 @@
     background-color: lightgreen;
 }
 html{
-    /* filter: invert(1); */
     background-color: white;
 }
 
@@ -48,14 +47,15 @@ button:hover{
 
 
 html,button,.content{
-    filter: invert(1);
+    filter: invert(var(--numvar));
 }
 
 
 :root {
+    --numvar: 1;
     --animate-duration: 1s;
     --animate-delay: 1s;
-    --animate-repeat: 1
+    --animate-repeat: 1;
 }
 
 .animate__animated {

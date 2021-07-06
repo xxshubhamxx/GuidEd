@@ -94,12 +94,17 @@
     font-size: 2vh;
   }
 
+
+  :root{
+    --numvar: 1;
+  }
+
   html{
-    filter: invert(1);
+    filter: invert(var(--numvar));
   }
  .ccardbox img{
-    filter: invert(1);
+    filter: invert(var(--numvar));
   }
   footer{
-    filter: invert(1);
+    filter: invert(var(--numvar));
   }

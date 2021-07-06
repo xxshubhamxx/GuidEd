@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dark Mode Try</title>
+    <script type="text/javascript">
+        var r = document.querySelector(':root');
+        var rs = getComputedStyle(r);
+        console.log(rs.getPropertyValue('--numvar'));
+        function func() {
+            if (rs.getPropertyValue('--numvar') == 0) {
+                document.getElementById('b1').innerHTML = "Dark Mode";
+                r.style.setProperty('--numvar', '1');
+            }
+            else if (rs.getPropertyValue('--numvar') == 1) {
+                document.getElementById('b1').innerHTML = "Light Mode";
+                r.style.setProperty('--numvar', '0');
+            }
+        }
+    </script>
+    <style>
+        :root {
+            --numvar: 0;
+        }
+
+        html {
+            filter: invert(var(--numvar));
+            background-color: white;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="func()" id="b1">
+        Light Mode
+    </button>
+</body>
+
+</html>
