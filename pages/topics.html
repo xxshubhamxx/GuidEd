@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/video_lectures.css">
+</head>
+
+<body>
+    <div class="all">
+        <div class="lefter" onclick="cppClick()">
+            <div class="text" id="t1">C++</div>
+        </div>
+        <div class="left" onclick="pyClick()">
+            <div class="text" id="t2">Python</div>
+        </div>
+        <div class="center" onclick="javaClick()">
+            <div class="explainer"><span>Hover me</span></div>
+            <div class="text" id="t3">Java</div>
+        </div>
+        <div class="right" onclick="htmlClick()">
+            <div class="text" id="t4">HTML & CSS</div>
+        </div>
+        <div class="righter onclick=" jsClick()">
+            <div class="text" id="t5"">JavaScript</div>
+        </div>  
+      </div>
+      
+      <script>
+        function cppClick() {
+            window.parent.location.href = "video_content.html#java";
+        } 
+        function pyClick() {
+            window.parent.location.href = "video_content.html#c++";
+        } 
+        function javaClick() {
+            window.parent.location.href = "video_content.html#python";
+        } 
+        function htmlClick() {
+            window.parent.location.href = "video_content.html#html_css";
+        } 
+        function jsClick() {
+            window.parent.location.href = "video_content.html#javascript";
+        }
+        </script>
+</body>
+
+</html>
