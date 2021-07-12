@@ -240,7 +240,7 @@ body {
 	width: 20px;
 	margin-left: 170px;
 	cursor: pointer;
-	/* transform: rotate(180deg); */
+	transform: rotate(-90deg);
 }
 
 .dcard:hover .fpart img{
