@@ -10,6 +10,15 @@
   <link rel="stylesheet" type="text/css" href="../css/pages.css" />
   <script type="text/javascript" src="..js/script.js"></script>
   <link rel="stylesheet" href="../css/interview.css">
+  <style>
+    :root{
+      --numvar: 1;
+    }
+    .left-col img[src="../images/icon/logo.png"] {
+      width: 200px;
+      filter: invert(var(--numvar));
+    }
+  </style>
 </head>
 
 <body>
@@ -311,7 +320,7 @@
     <!-- <hr style="color: #000; height: 0.5px;"> -->
     <div class="footer-container" style="font-weight: 100;">
       <div class="left-col">
-        <img src="../images/icon/logo.png" style="width: 200px; filter: invert(1);">
+        <img src="../images/icon/logo.png">
         <div class="logo"></div>
         <div class="social-media">
           <a href="#"><img src="../images/icon\fb.png"></a>

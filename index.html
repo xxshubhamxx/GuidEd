@@ -32,6 +32,16 @@
 			}
 		})
 	</script>
+	<style>
+		:root{
+			--numvar: 1;
+			--revnum: 0;
+		}
+		.left-col img[src="images/icon/logo.png"]{
+			width: 200px;
+			filter: invert(var(--revnum)) !important;
+		}
+	</style>
 </head>
 
 <body>
@@ -449,7 +459,7 @@
 	<footer>
 		<div class="footer-container">
 			<div class="left-col">
-				<img src="images/icon/logo.png" style="width: 200px; filter: invert(0) !important;">
+				<img src="images/icon/logo.png">
 				<div class="logo"></div>
 				<div class="social-media">
 					<a href="#"><img src="images/icon\fb.png"></a>

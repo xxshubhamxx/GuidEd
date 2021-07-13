@@ -7,29 +7,38 @@
 	<link rel="stylesheet" type="text/css" href="../css/pages.css">
 	<script type="text/javascript" src="../js/script.js"></script>
 	<style>
+		:root{
+			--numvar: 1;
+			--revnum: 0;
+		}
+		
 		html,
 		img,
 		#Edu-Learning-logo,
 		iframe {
-			filter: invert(1) !important;
+			filter: invert(var(--numvar)) !important;
 		}
 
 		footer {
-			filter: invert(1);
+			filter: invert(var(--numvar));
 		}
 
 		.left-col {
-			filter: invert(1);
+			filter: invert(var(--numvar));
 		}
 
 		.rights-text,
 		.change-filter {
-			filter: invert(1);
+			filter: invert(var(--numvar));
 		}
 
 		html {
 			margin-left: 2.5px;
 			margin-right: 2.5px;
+		}
+		.left-col img[src="../images/icon/logo.png"]{
+			width: 200px;
+			filter: invert(var(--revnum)) !important;
 		}
 	</style>
 </head>
@@ -229,7 +238,7 @@
 	<footer>
 		<div class="footer-container">
 			<div class="left-col">
-				<img src="../images/icon/logo.png" style="width: 200px; filter: invert(0) !important;">
+				<img src="../images/icon/logo.png">
 				<div class="logo"></div>
 				<div class="social-media">
 					<a href="#"><img src="../images/icon\fb.png"></a>

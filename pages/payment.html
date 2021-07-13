@@ -7,24 +7,27 @@
 	<link rel="stylesheet" type="text/css" href="../css/pages.css">
 	<script type="text/javascript" src="../js/script.js"></script>
 	<style>
+		:root{
+			--numvar: 1;
+		}
 		html,
 		img,
 		#Edu-Learning-logo,
 		iframe {
-			filter: invert(1) !important;
+			filter: invert(var(--numvar)) !important;
 		}
 
 		footer {
-			filter: invert(1);
+			filter: invert(var(--numvar));
 		}
 
 		.left-col {
-			filter: invert(1);
+			filter: invert(var(--numvar));
 		}
 
 		.rights-text,
 		.change-filter {
-			filter: invert(1);
+			filter: invert(var(--numvar));
 		}
 
 		html {

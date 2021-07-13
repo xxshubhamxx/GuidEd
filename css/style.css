@@ -8,9 +8,13 @@
 	padding: 0;
 }
 
+:root{
+	--numvar: 1;
+}
+
 html {
 	scroll-behavior: smooth;
-	filter:invert(1);
+	filter:invert(var(--numvar));
 }
 body {
 	background: #FFF;
@@ -833,17 +837,17 @@ footer .btn:hover {
 }
 
 .logo,img{
-	filter:invert(1) !important;
+	filter:invert(var(--numvar)) !important;
 }
 
 footer{
-	filter: invert(1);
+	filter: invert(var(--numvar));
 }
 
 .left-col{
-	filter: invert(1);
+	filter: invert(var(--numvar));
 }
 
 .rights-text,.change-filter{
-	filter: invert(1);
+	filter: invert(var(--numvar));
 }

@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --numvar: 1;
+}
+
 html {
-    filter: invert(1);
+    filter: invert(0);
 }
 
 body {

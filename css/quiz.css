@@ -7,9 +7,14 @@
 	margin: 0;
 	padding: 0;
 }
+
+:root{
+	--numvar: 1;
+}
+
 html {
 	scroll-behavior: smooth;
-	/* filter: invert(1); */
+	/* filter: invert(var(--numvar)); */
 }
 body {
 	background: url(../images/extra/b1.jpg);
@@ -32,7 +37,7 @@ body {
 /*NAVIGATION BAR*/
 .nav
 {
-	filter: invert(1);
+	filter: invert(var(--numvar));
 	width: 100%;
 	background-color: #fff;
 	display: flex;
@@ -47,7 +52,7 @@ body {
 }
 
 li img{
-	filter: invert(1);
+	filter: invert(var(--numvar));
 }
 
 .nav li, a, button
@@ -192,7 +197,7 @@ li img{
 }
 /*Different Topics Container*/
 .left-side {
-	filter: invert(1);
+	filter: invert(var(--numvar));
 	background: #FFF;
 	height: 100%;
 	width: 25%;
@@ -239,7 +244,7 @@ li img{
 	border: none;
 }
 .main-frame {
-	filter: invert(1);
+	filter: invert(var(--numvar));
 	background: url(../images/extra/quiz.jpg);
 	background-size: cover;
 	background-position: center;

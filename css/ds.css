@@ -48,14 +48,15 @@ button:hover{
 
 
 html,button,.content{
-    filter: invert(1);
+    filter: invert(var(--numvar));
 }
 
 
 :root {
     --animate-duration: 1s;
     --animate-delay: 1s;
-    --animate-repeat: 1
+    --animate-repeat: 1;
+    --numvar: 1;
 }
 
 .animate__animated {
@@ -64,7 +65,7 @@ html,button,.content{
     -webkit-animation-duration: var(--animate-duration);
     animation-duration: var(--animate-duration);
     -webkit-animation-fill-mode: both;
-    animation-fill-mode: both
+    animation-fill-mode: both;
 }
 
 
@@ -72,17 +73,17 @@ html,button,.content{
     0% {
         -webkit-transform: translateX(2000px) scale(.7);
         transform: translateX(2000px) scale(.7);
-        opacity: .7
+        opacity: .7;
     }
     80% {
         -webkit-transform: translateX(0) scale(.7);
         transform: translateX(0) scale(.7);
-        opacity: .7
+        opacity: .7;
     }
     to {
         -webkit-transform: scale(1);
         transform: scale(1);
-        opacity: 1
+        opacity: 1;
     }
 }
 
@@ -90,23 +91,23 @@ html,button,.content{
     0% {
         -webkit-transform: translateX(2000px) scale(.7);
         transform: translateX(2000px) scale(.7);
-        opacity: .7
+        opacity: .7;
     }
     80% {
         -webkit-transform: translateX(0) scale(.7);
         transform: translateX(0) scale(.7);
-        opacity: .7
+        opacity: .7;
     }
     to {
         -webkit-transform: scale(1);
         transform: scale(1);
-        opacity: 1
+        opacity: 1;
     }
 }
 
 .animate__backInRight {
     -webkit-animation-name: backInRight;
-    animation-name: backInRight
+    animation-name: backInRight;
 }
 
 
@@ -115,17 +116,17 @@ html,button,.content{
     0% {
         -webkit-transform: translateX(-2000px) scale(.7);
         transform: translateX(-2000px) scale(.7);
-        opacity: .7
+        opacity: .7;
     }
     80% {
         -webkit-transform: translateX(0) scale(.7);
         transform: translateX(0) scale(.7);
-        opacity: .7
+        opacity: .7;
     }
     to {
         -webkit-transform: scale(1);
         transform: scale(1);
-        opacity: 1
+        opacity: 1;
     }
 }
 
@@ -133,21 +134,21 @@ html,button,.content{
     0% {
         -webkit-transform: translateX(-2000px) scale(.7);
         transform: translateX(-2000px) scale(.7);
-        opacity: .7
+        opacity: .7;
     }
     80% {
         -webkit-transform: translateX(0) scale(.7);
         transform: translateX(0) scale(.7);
-        opacity: .7
+        opacity: .7;
     }
     to {
         -webkit-transform: scale(1);
         transform: scale(1);
-        opacity: 1
+        opacity: 1;
     }
 }
 
 .animate__backInLeft {
     -webkit-animation-name: backInLeft;
-    animation-name: backInLeft
+    animation-name: backInLeft;
 }
