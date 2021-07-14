@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --numvar: 0;
+        }
+
+        html {
+            filter: invert(var(--numvar));
+        }
+
+
+        body {
+            background: #fff;
+        }
+
+        .outer-button {
+            display: inline-block;
+            height: 28px;
+            width: 28px;
+            position: relative;
+            margin: 0 3px;
+        }
+
+        .inner-button {
+            display: inline-block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), inset 0px 0px 1px 2px white;
+            border-radius: 20px;
+            background: #f5f5f5;
+        }
+
+        span {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .status-text {
+            color: white;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-family: Futura, sans-serif;
+            transition: all 0.2s ease;
+            /* font-weight: 900; */
+        }
+
+        .sliding-switch {
+            height: 28px;
+            width: 72px;
+            position: relative;
+        }
+
+        .outer-switch-box {
+            overflow: hidden;
+
+            height: 100%;
+            width: 100%;
+            display: inline-block;
+            border-radius: 20px;
+            position: relative;
+            box-shadow: inset 0 1px 3px 0px #818181, 0px 1px 2px 1px white;
+            transition: all 0.3s ease;
+            transition-delay: 65ms;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .inner-switch-box {
+            position: relative;
+            width: 175px;
+            transition: all 0.3s ease;
+        }
+
+        .switch-checkbox:checked+.outer-switch-box .inner-switch-box {
+            left: -27px;
+            /*OFF*/
+        }
+
+        .switch-checkbox:not(:checked)+.outer-switch-box .inner-switch-box {
+            left: 20px;
+            /*ON*/
+        }
+
+        .switch-checkbox:checked+.outer-switch-box {
+            /* background-image: linear-gradient(#b6d284, #b6d284); */
+            background: #492d7b;
+            /* background: #b6d284; */
+        }
+
+        .switch-checkbox:not(:checked)+.outer-switch-box {
+            /* background-image: linear-gradient(#cbcbcb, #dbdbdb); */
+            background: #dbdbdb;
+        }
+
+        [type="checkbox"] {
+            margin: 0;
+            padding: 0;
+            appearance: none;
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            opacity: 0;
+        }
+
+        .unchecked-text {
+            color: black !important;
+            font-weight: 700;
+        }
+
+        .btn-heading {
+            color: black;
+            font-family: 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', 'sans-serif';
+            padding: .4vw 0;
+            font-weight: 600;
+        }
+
+        body {
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btn-heading">Change Mode:</div>
+    <div class="sliding-switch">
+        <input type="checkbox" id="btn" class="switch-checkbox" />
+        <div class="outer-switch-box">
+            <div class="inner-switch-box">
+                <span class="status-text checked-text" id="textp1">DM</span>
+                <span class="outer-button">
+                    <span class="inner-button"></span>
+                </span>
+                <span class="status-text unchecked-text" id="textp2">LM</span>
+            </div>
+        </div>
+    </div>
+    <script src="../js/modebutton.js"></script>
+</body>
+
+</html>
