@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Data structures</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/ds.css">
     <script type="text/javascript" src="../js/script.js"></script>
@@ -94,11 +94,11 @@
             <br><br>
             <div class="definition animate__animated" id="ud">
                 Data structures serve as the basis for abstract data types (ADT). The ADT defines the logical form of
-                the data type. The data structure implements the physical form of the data type.
+                the data type. The data structure implements the physical form of the data type.<br>
 
                 Different types of data structures are suited to different kinds of applications, and some are highly
                 specialized to specific tasks. For example, relational databases commonly use B-tree indexes for data
-                retrieval, while compiler implementations usually use hash tables to look up identifiers.
+                retrieval, while compiler implementations usually use hash tables to look up identifiers.<br>
 
                 Data structures provide a means to manage large amounts of data efficiently for uses such as large
                 databases and internet indexing services. Usually, efficient data structures are key to designing
@@ -121,7 +121,7 @@
                 its memory, specified by a pointer—a bit string, representing a memory address, that can be itself
                 stored in memory and manipulated by the program. Thus, the array and record data structures are based on
                 computing the addresses of data items with arithmetic operations, while the linked data structures are
-                based on storing addresses of data items within the structure itself.
+                based on storing addresses of data items within the structure itself.<br>
 
                 The implementation of a data structure usually requires writing a set of procedures that create and
                 manipulate instances of that structure. The efficiency of a data structure cannot be analyzed separately
@@ -140,49 +140,51 @@
             <br><br>
             <div class="definition animate__animated" id="ed">
 
-                <li>
+                  <li>
                     There are numerous types of data structures, generally built upon simpler primitive data types:
-                </li>
-                <li>
+                  </li>
+                <ol>
+                  <li>
                     An array is a number of elements in a specific order, typically all of the same type (depending on
                     the language, individual elements may either all be forced to be the same type, or may be of almost
                     any type). Elements are accessed using an integer index to specify which element is required.
                     Typical implementations allocate contiguous memory words for the elements of arrays (but this is not
                     always a necessity). Arrays may be fixed-length or resizable.
-                </li>
-                <li>
+                  </li>
+                  <li>
                     A linked list (also just called list) is a linear collection of data elements of any type, called
                     nodes, where each node has itself a value, and points to the next node in the linked list. The
                     principal advantage of a linked list over an array is that values can always be efficiently inserted
                     and removed without relocating the rest of the list.
                     Certain other operations, such as random access to a certain element, are however slower on lists
                     than on arrays.
-                </li>
-                <li>
+                  </li>
+                  <li>
                     A record (also called tuple or struct) is an aggregate data structure. A record is a value that
                     contains other values, typically in fixed number and sequence and typically indexed by names. The
                     elements of records are usually called fields or members.
-                </li>
-                <li>
+                  </li>
+                  <li>
                     A union is a data structure that specifies which of a number of permitted primitive types may be
                     stored in its instances, e.g. float or long integer. Contrast with a record, which could be defined
                     to contain a float and an integer; whereas in a union, there is only one value at a time. Enough
                     space is allocated to contain the widest member datatype.
-                </li>
-                <li>
+                  </li>
+                  <li>
                     A tagged union (also called variant, variant record, discriminated union, or disjoint union)
                     contains an additional field indicating its current type, for enhanced type safety.
-                </li>
-                <li>
+                  </li>
+                  <li>
                     An object is a data structure that contains data fields, like a record does, as well as various
                     methods which operate on the data contents. An object is an in-memory instance of a class from a
                     taxonomy. In the context of object-oriented programming, records are known as plain old data
                     structures to distinguish them from objects.[11]
                     In addition, graphs and binary trees are other commonly used data structures.
-                </li>
-                <li>
+                  </li>
+                  <li>
                     In addition, graphs and binary trees are other commonly used data structures.
-                </li>
+                  </li>
+                </ol>
             </div>
         </div>
         <div class="references none animate__animated" id="references">
