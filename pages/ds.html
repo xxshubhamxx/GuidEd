@@ -6,44 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/ds.css">
     <script type="text/javascript" src="../js/script.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/pages.css">
     <script src="../js/ds.js"></script>
+    
 </head>
 
 <body>
-    	
-<!-- NAVIGATION -->
-	<header>
-		<div class="nav" id="nav">
-			<div id="Edu-Learning-logo">
-			<a href="../index.html"><img src="../images/icon/logo.png" style="width: 120px;"></a></div>
-			<div class="switch-tab" id="switch-tab" onclick="switchTAB()"><img src="../images/icon/menu.png"></div>
-			<ul id="list-switch">
-				<li><a href="quiz.html"><img src="../images/courses/d1.png" class="icon">Daily Quiz</a></li>
-				<li><a href="computer_courses.html"><img src="../images/courses/computer.png" class="icon">Computer Courses</a></li>
-				<li><a href="ds.html"><img src="../images/courses/data.png" class="icon">Data Structures</a></li>
-				<li><a href="#algo"><img src="../images/courses/algo.png" class="icon">Algorithm</a></li>
-				<li><a href="#projects"><img src="../images/courses/projects.png" class="icon">Projects</a></li>
-			</ul>
-			<div class="search" id="search-switch">
-				<input type="search" placeholder="Search" class="srch"><button id="srchbtn"><img src="../images/icon/search.png"></button>
-			</div>
-		</div>
-	</header>
-	
 
-<!-- MAIN Heading of Page -->
-	<div class="title">
-		<span>Data Structures Courses<br>on Edu-Learning</span>
-		<div class="shortdesc">
-			<p>Learn programming languages and concepts to prepare for a career in<br>hardware or software development</p>
-		</div>
-	</div>
-    
+    <!-- NAVIGATION -->
+    <header>
+        <div class="nav" id="nav">
+            <div id="Edu-Learning-logo">
+                <a href="../index.html"><img src="../images/icon/logo.png" style="width: 120px;"></a>
+            </div>
+            <div class="switch-tab" id="switch-tab" onclick="switchTAB()"><img src="../images/icon/menu.png"></div>
+            <ul id="list-switch">
+                <li><a href="quiz.html"><img src="../images/courses/d1.png" class="icon">Daily Quiz</a></li>
+                <li><a href="computer_courses.html"><img src="../images/courses/computer.png" class="icon">Computer
+                        Courses</a></li>
+                <li><a href="ds.html"><img src="../images/courses/data.png" class="icon">Data Structures</a></li>
+                <li><a href="#algo"><img src="../images/courses/algo.png" class="icon">Algorithm</a></li>
+                <li><a href="#projects"><img src="../images/courses/projects.png" class="icon">Projects</a></li>
+            </ul>
+            <div class="search" id="search-switch">
+                <input type="search" placeholder="Search" class="srch"><button id="srchbtn"><img
+                        src="../images/icon/search.png"></button>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- MAIN Heading of Page -->
+    <div class="title">
+        <span>Data Structures Courses<br>on Edu-Learning</span>
+        <div class="shortdesc">
+            <p>Learn programming languages and concepts to prepare for a career in<br>hardware or software development
+            </p>
+        </div>
+    </div>
+
     <!-- Main Content of the page -->
-    
+
     <div class="options">
         <button class="op1" onclick="clicked1()">
             Meaning
@@ -57,6 +63,12 @@
         </button>
         <button class="op4" onclick="clicked4()">
             Examples
+        </button>
+        <button class="op5" onclick="clicked5()">
+            References
+        </button>
+        <button class="op6" onclick="clicked6()">
+            Courses
         </button>
     </div>
 
@@ -173,6 +185,33 @@
                 </li>
             </div>
         </div>
+        <div class="references none animate__animated" id="references">
+            <div class="heading animate__animated" id="rh">
+                References:
+            </div>
+            <br><br>
+            <div class="definition animate__animated" id="rd">
+                <ol>
+                    <li><a href="https://en.wikipedia.org/wiki/Data_structure">Click here for Wikipedia</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/data-structures/?ref=shm">Click here for GeeksforGeeks</a></li>
+                    <li><a href="https://www.javatpoint.com/data-structure-tutorial">Click here for Javatpoint</a></li>
+                    <li><a href="https://www.sitesbay.com/data-structure/c-data-structure">Click here for Sitesbay</a></li>
+                  </ol>
+            </div>
+        </div>
+        <div class="courses none animate__animated" id="courses">
+            <div class="heading animate__animated" id="ch">
+             Courses
+            </div>
+            <br><br>
+            <div class="definition animate__animated" id="cd">
+                Courses offered by the academys through online for data structures
+              <ol>
+                   <li><a href="https://www.coursera.org/learn/data-structures?action=enroll">Click here for Coursera</a></li>
+                   <li><a href="https://www.greatlearning.in/academy/learn-for-free/courses/data-structures-in-c">Click here for Greatlearning</a></li>
+                   <li><a href="https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/">Click here for Udemy</a></li>
+             </ol>
+            </div>
     </div>
 </body>
 

@@ -10,7 +10,21 @@
     font-size: 20px;
     background-color: blanchedalmond;
 }
-.meaning,.usage,.implementation,.examples{
+
+ol{
+    padding: 20px;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+ol a{
+    font-size: 19px;
+}
+ol a::after{
+    padding: 5px;
+    content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+}
+.meaning,.usage,.implementation,.examples,.references,.courses{
     margin: 85px;
     background-color: lightgreen;
 }
@@ -43,12 +57,13 @@ button:hover{
 }
 
 .content{
-    margin-top: 200px;
+    margin-top: 300px;
 }
 
 
 html,button,.content{
     filter: invert(var(--numvar));
+    scroll-behavior: smooth;
 }
 
 
@@ -68,6 +83,9 @@ html,button,.content{
     animation-fill-mode: both;
 }
 
+body{
+    overflow-x: hidden;  /*To hide horizontal scrollbar when button is clicked*/
+}
 
 @-webkit-keyframes backInRight {
     0% {
