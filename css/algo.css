@@ -1,0 +1,172 @@
+.heading{
+    font-size: 25px;
+    padding: 5px;
+    background-color:blue;
+    float: left;
+}
+
+.definition{
+    padding: 20px;
+    font-size: 20px;
+    background-color: orangered;
+}
+
+ol{
+    padding: 20px;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+ol a{
+    font-size: 19px;
+}
+ol a::after{
+    padding: 5px;
+    content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+}
+.meaning,.usage,.implementation,.examples,.references,.courses{
+    margin: 85px;
+    background-color: yellow;
+}
+html{
+    /* filter: invert(1); */
+    background-color: white;
+}
+
+.options{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.options button{
+    height: 70px;
+    width: 200px;
+    margin: 10px;
+    background-color: aqua;
+}
+
+button:hover{
+    background-color: silver;
+    cursor: pointer ;
+}
+
+.none{
+    display: none !important;
+}
+
+.content{
+    margin-top: 300px;
+}
+
+
+html,button,.content{
+    filter: invert(var(--numvar));
+    scroll-behavior: smooth;
+}
+
+
+:root {
+    --animate-duration: 1s;
+    --animate-delay: 1s;
+    --animate-repeat: 1;
+    --numvar: 1;
+}
+
+.animate__animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-duration: var(--animate-duration);
+    animation-duration: var(--animate-duration);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+body{
+    overflow-x: hidden;  /*To hide horizontal scrollbar when button is clicked*/
+}
+
+@-webkit-keyframes backInRight {
+    0% {
+        -webkit-transform: translateX(2000px) scale(.7);
+        transform: translateX(2000px) scale(.7);
+        opacity: .7;
+    }
+    80% {
+        -webkit-transform: translateX(0) scale(.7);
+        transform: translateX(0) scale(.7);
+        opacity: .7;
+    }
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes backInRight {
+    0% {
+        -webkit-transform: translateX(2000px) scale(.7);
+        transform: translateX(2000px) scale(.7);
+        opacity: .7;
+    }
+    80% {
+        -webkit-transform: translateX(0) scale(.7);
+        transform: translateX(0) scale(.7);
+        opacity: .7;
+    }
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.animate__backInRight {
+    -webkit-animation-name: backInRight;
+    animation-name: backInRight;
+}
+
+
+
+@-webkit-keyframes backInLeft {
+    0% {
+        -webkit-transform: translateX(-2000px) scale(.7);
+        transform: translateX(-2000px) scale(.7);
+        opacity: .7;
+    }
+    80% {
+        -webkit-transform: translateX(0) scale(.7);
+        transform: translateX(0) scale(.7);
+        opacity: .7;
+    }
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes backInLeft {
+    0% {
+        -webkit-transform: translateX(-2000px) scale(.7);
+        transform: translateX(-2000px) scale(.7);
+        opacity: .7;
+    }
+    80% {
+        -webkit-transform: translateX(0) scale(.7);
+        transform: translateX(0) scale(.7);
+        opacity: .7;
+    }
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.animate__backInLeft {
+    -webkit-animation-name: backInLeft;
+    animation-name: backInLeft;
+}
