@@ -9,6 +9,10 @@ body {
     padding: 0;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 .player {
     max-width: 800px;
     border: 6px solid rgba(255, 255, 255, 0.2);
