@@ -6,6 +6,7 @@
 	<title>Computer Science Courses on Edu-Learning</title>
 	<link rel="stylesheet" type="text/css" href="../css/pages.css">
 	<script type="text/javascript" src="../js/script.js"></script>
+	<link rel="stylesheet" href="../css/modebutton.css">
 	<style>
 		:root{
 			--numvar: 1;
@@ -50,6 +51,18 @@
 		<div class="nav" id="nav">
 			<div id="Edu-Learning-logo">
 				<a href="../index.html"><img src="../images/icon/logo.png" style="width: 120px;"></a>
+			</div>
+			<div class="sliding-switch">
+				<input type="checkbox" id="btn" class="switch-checkbox" />
+				<div class="outer-switch-box">
+					<div class="inner-switch-box">
+						<span class="status-text checked-text" id="textp1">DM</span>
+						<span class="outer-button">
+							<span class="inner-button"></span>
+						</span>
+						<span class="status-text unchecked-text" id="textp2">LM</span>
+					</div>
+				</div>
 			</div>
 			<div class="switch-tab" id="switch-tab" onclick="switchTAB()"><img src="../images/icon/menu.png"></div>
 			<ul id="list-switch">
@@ -267,6 +280,7 @@
 			</div>
 		</div>
 	</footer>
+	<script src="../js/modebutton.js"></script>
 </body>
 
 </html>

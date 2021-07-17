@@ -5,7 +5,10 @@
 	<link rel="shortcut icon" type="png" href="../images/icon/favicon.png">
 	<title>Computer Science Courses on Edu-Learning</title>
 	<link rel="stylesheet" type="text/css" href="../css/pages.css">
+	<link rel="stylesheet" type="text/css" href="../css/modebutton.css">
 	<script type="text/javascript" src="../js/script.js"></script>
+	<script type="text/javascript" src="../js/gsearch.js"></script>
+
 	<style>
 		:root {
 			--numvar: 1;
@@ -52,6 +55,18 @@
 			<div id="Edu-Learning-logo">
 				<a href="../index.html"><img src="../images/icon/logo.png" style="width: 120px;"></a>
 			</div>
+			<div class="sliding-switch">
+				<input type="checkbox" id="btn" class="switch-checkbox" />
+				<div class="outer-switch-box">
+					<div class="inner-switch-box">
+						<span class="status-text checked-text" id="textp1">DM</span>
+						<span class="outer-button">
+							<span class="inner-button"></span>
+						</span>
+						<span class="status-text unchecked-text" id="textp2">LM</span>
+					</div>
+				</div>
+			</div>
 			<div class="switch-tab" id="switch-tab" onclick="switchTAB()"><img src="../images/icon/menu.png"></div>
 			<ul id="list-switch">
 				<li><a href="quiz.html"><img src="../images/courses/d1.png" class="icon">Daily Quiz</a></li>
@@ -62,9 +77,12 @@
 				<li><a href="#projects"><img src="../images/courses/projects.png" class="icon">Projects</a></li>
 			</ul>
 			<div class="search" id="search-switch">
-				<input type="search" placeholder="Search" class="srch"><button id="srchbtn"><img
-						src="../images/icon/search.png"></button>
-			</div>
+				<!-- <input type="text" class="search" id="search_data" placeholder="Search here..." onfocus="myfunc()"> -->
+				<input type="search" placeholder="Search" class="srch" id="search_data" onfocus="myfunc()" />
+				<button id="srchbtn" onclick="gsearch()">
+				  <img src="../images/icon/search.png"  />
+				</button>
+			  </div>
 		</div>
 	</header>
 
@@ -613,6 +631,8 @@
 			</div>
 		</div>
 	</footer>
+
+	<script src="../js/modebutton.js"></script>
 
 </body>
 

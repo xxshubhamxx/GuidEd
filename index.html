@@ -8,20 +8,10 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<link rel="stylesheet" href="css/explore.css">
+	<link rel="stylesheet" href="css/modebutton.css">
 	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/gsearch.js"></script>
 	<script>
-		function gsearch() {
-			var search_data = document.getElementById("search_data").value;
-			// document.location.replace("https://www.google.com/search?q=" + search_data + "");    //we are unable to go back so we need to open it in new tab and this can be done by the code of next line:
-			window.open("https://www.google.com/search?q=" + search_data + "", '_blank').focus();
-		}
-		function myfunc() {
-			search_data.addEventListener("keyup", function (event) {
-				if (event.keyCode === 13) {
-					gsearch();
-				}
-			});
-		}
 		const nav = document.getElementsByTagName("nav")[0];
 		window.addEventListener("scroll", function () {
 			const top = window.pageYOffset;
@@ -33,11 +23,12 @@
 		})
 	</script>
 	<style>
-		:root{
+		:root {
 			--numvar: 1;
 			--revnum: 0;
 		}
-		.left-col img[src="images/icon/logo.png"]{
+
+		.left-col img[src="images/icon/logo.png"] {
 			width: 200px;
 			filter: invert(var(--revnum)) !important;
 		}
@@ -57,12 +48,25 @@
 				<li><a href="#contactus_section">Contact</a></li>
 			</ul>
 			<div class="srch">
-				<input type="text" class="search" id="search_data" placeholder="Search here..." onfocus="myfunc()">
+				<input type="search" class="search" id="search_data" placeholder="Search here..." onfocus="myfunc()">
 				<img src="images/icon/search.png" alt="search" onclick="gsearch()">
+			</div>
+			<div class="sliding-switch">
+				<input type="checkbox" id="btn" class="switch-checkbox" />
+				<div class="outer-switch-box">
+					<div class="inner-switch-box">
+						<span class="status-text checked-text" id="textp1">DM</span>
+						<span class="outer-button">
+							<span class="inner-button"></span>
+						</span>
+						<span class="status-text unchecked-text" id="textp2">LM</span>
+					</div>
+				</div>
 			</div>
 			<a class="get-started" href="pages/login.html">Get Started</a>
 			<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
 		</nav>
+
 		<div class="head-container">
 			<div class="quote">
 				<p>The beautiful thing about learning is that nobody can take it away from you</p>
@@ -93,6 +97,7 @@
 	</header>
 
 
+
 	<!-- Some Popular Pages -->
 	<div class="title">
 		<span>Popular on Edu-Learning</span>
@@ -111,8 +116,7 @@
 
 					<div class="det"><a href="pages/ds.html"><img src="images/courses/data.png">Data Structures</a>
 					</div>
-					<div class="det"><a href="pages/algo.html"><img
-								src="images/courses/algo.png">Algorithm</a></div>
+					<div class="det"><a href="pages/algo.html"><img src="images/courses/algo.png">Algorithm</a></div>
 
 					<div class="det"><a href="pages/interview.html"><img src="images/courses/paper.png">Interview
 							Questions</a></div>
@@ -488,6 +492,8 @@
 			</div>
 		</div>
 	</footer>
+
+	<script src="js/modebutton.js"></script>
 
 
 </body>

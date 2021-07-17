@@ -8,15 +8,17 @@
   <link rel="shortcut icon" type="png" href="../images/icon/favicon.png" />
   <title>Interview Preparation Courses on Edu-Learning</title>
   <link rel="stylesheet" type="text/css" href="../css/pages.css" />
-  <script type="text/javascript" src="..js/script.js"></script>
+  <link rel="stylesheet" href="../css/modebutton.css">
   <link rel="stylesheet" href="../css/interview.css">
+  <script type="text/javascript" src="../js/script.js"></script>
+  <script src="../js/gsearch.js"></script>
   <style>
     :root{
       --numvar: 1;
     }
     .left-col img[src="../images/icon/logo.png"] {
       width: 200px;
-      filter: invert(var(--numvar));
+      filter: invert(1);
     }
   </style>
 </head>
@@ -28,6 +30,18 @@
       <div id="Edu-Learning-logo">
         <a href="../index.html"><img src="../images/icon/logo.png" style="width: 120px" /></a>
       </div>
+      <div class="sliding-switch">
+				<input type="checkbox" id="btn" class="switch-checkbox" />
+				<div class="outer-switch-box">
+					<div class="inner-switch-box">
+						<span class="status-text checked-text" id="textp1">DM</span>
+						<span class="outer-button">
+							<span class="inner-button"></span>
+						</span>
+						<span class="status-text unchecked-text" id="textp2">LM</span>
+					</div>
+				</div>
+			</div>
       <div class="switch-tab" id="switch-tab" onclick="switchTAB()">
         <img src="../images/icon/menu.png" />
       </div>
@@ -40,7 +54,7 @@
             Courses</a>
         </li>
         <li>
-          <a href="./computer_courses.html#data"><img src="../images/courses/data.png" class="icon" />Data
+          <a href="./ds.html"><img src="../images/courses/data.png" class="icon" />Data
             Structures</a>
         </li>
         <li>
@@ -52,8 +66,10 @@
         </li>
       </ul>
       <div class="search" id="search-switch">
-        <input type="search" placeholder="Search" class="srch" /><button id="srchbtn">
-          <img src="../images/icon/search.png" />
+        <!-- <input type="text" class="search" id="search_data" placeholder="Search here..." onfocus="myfunc()"> -->
+        <input type="search" placeholder="Search" class="srch" id="search_data" onfocus="myfunc()" />
+        <button id="srchbtn" onclick="gsearch()">
+          <img src="../images/icon/search.png"  />
         </button>
       </div>
     </div>
@@ -366,6 +382,8 @@
       });
     }
   </script>
+
+  <script src="../js/modebutton.js"></script>
 </body>
 
 </html>

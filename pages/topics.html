@@ -30,18 +30,30 @@
       </div>
       
       <script>
+          if (localStorage.getItem('thisvarisgud4me') == '0') {
+              document.getElementById("t1").style.color = "#000";
+              document.getElementById("t2").style.color = "#000";
+              document.getElementById("t3").style.color = "#000";
+              document.getElementById("t4").style.color = "#000";
+              document.getElementById("t5").style.color = "#000";
+          }
+
         function cppClick() {
             window.parent.location.href = "video_content.html#java";
         } 
+
         function pyClick() {
             window.parent.location.href = "video_content.html#c++";
         } 
+
         function javaClick() {
             window.parent.location.href = "video_content.html#python";
         } 
+
         function htmlClick() {
             window.parent.location.href = "video_content.html#html_css";
         } 
+        
         function jsClick() {
             window.parent.location.href = "video_content.html#javascript";
         }
