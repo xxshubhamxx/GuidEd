@@ -45,7 +45,6 @@
             filter: invert(var(--revnum)) !important;
         }
     </style>
-    <link rel="stylesheet" href="../css/clock.css">
 </head>
 
 <body>
@@ -92,117 +91,18 @@
 
     <!-- MAIN Heading of Page -->
     <div id="main-content-wrap">
-        <div class="title">
-            <span> View Projects made by<br>students on Edu-Learning</span>
-            <div class="shortdesc">
-                <p>This page contains mini-projects made by our students<br>to motivate you to create your own projects
-                </p>
-            </div>
-        </div>
+        <div style="margin-top: 150px;"></div>
 
         <!-- Main coontent of the page -->
 
-        <div class="project_wrap">
-            <div class="project" onclick="window.location='clock.html';">
-                <div class="project-display" style=" max-height: 250px;">
-                    <div style="transform: translateY(-50px);">
-                    <div id="main-clock-wrap" style="transform: scale(0.5);">
-                        <div class="clock">
-            
-                            <div class="hour">
-                                <div class="hr" id="hr"></div>
-                            </div>
-            
-                            <div class="min">
-                                <div class="mn" id="mn"></div>
-                            </div>
-            
-                            <div class="sec">
-                                <div class="sc" id="sc"></div>
-                            </div>
-            
-                        </div>
-                    </div>
-                </div>
-                </div>
-                <div class="project-desc">
-                    <h1>Analog Clock</h1>
-                    <p> An Analog clock made using  </p>
-                    <p> basic and intermediate features </p>
-                    <p> of HTML, CSS and JavaScript</p>
-                </div>
-            </div>
-
-            <div class="project" style="cursor: auto;">
-                <div class="project-display2">
-                    <img src="../images/projects/gamecentral.PNG" style="min-height: 100%;">
-                </div>
-                <div class="project-desc">
-                    <h1>Game Central</h1>
-                    <p> An advanced  C++ Program (1500+ lines</p>
-                    <p> of code) to implement a Game Central</p>
-                    <p> to enjoy 7 different games.</p>
-                    <br>
-                    <p style="display: flex; justify-content: center; align-items: center;"> 
-                        <a href="https://drive.google.com/uc?export=download&id=1jAgt8eyTX9-x8So4TfLtDuNFvajQywRo" target="_blank">
-                        <button style="padding: 7px 15px;" >Download</button> </a>
-                    <p>
-                </div>
-            </div>  
-
-            <div class="project" onclick="window.location='./scrollmagic.html'">
-                <div class="project-display" style=" max-height: 245px;">
-                    <img src="../images/projects/scrollmagic.PNG" style="overflow: hidden;">
-                </div>
-                <div class="project-desc">
-                    <h1>Scroll Magic</h1>
-                    <p> A webpage to display the </p>
-                    <p> basic demo of a javascript </p>
-                    <p> library named magicScroll.js </p>
-                </div>
-            </div>
-
-        </div>
-        <div class="project_wrap">
-            <div class="project" onclick="window.location='./burning.html'">
-                <div class="project-display2">
-                    <img src="../images/projects/fire.PNG">
-                </div>
-                <div class="project-desc">
-                    <h1>Burning Fire</h1>
-                    <p> A simple webpage to display</p>
-                    <p> a text with burning animation </p>
-                    <p> using HTML and CSS</p>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-display">
-                    <img src="../images/courses/algo-course.jpg">
-                </div>
-                <div class="project-desc">
-                    <h1>Bitter Typeface</h1>
-                    <p>Body Text
-                    <p>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-display2">
-                    <img src="https://source.unsplash.com/1600x900/?nature,bird">
-                </div>
-                <div class="project-desc">
-                    <h1>Bitter Typeface</h1>
-                    <p>Body Text
-                    <p>
-                </div>
-            </div>
+        <div class="main-burning-wrap">
+            <iframe src="./fire.html" width="100%" style="height: 500px;" frameborder="0"></iframe>
         </div>
     </div>
 
 
     <!-- FOOTER -->
-    <footer>
+    <!-- <footer>
         <div class="footer-container">
             <div class="left-col">
                 <img src="../images/icon/logo.png">
@@ -233,11 +133,10 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <script src="../js/modebutton.js"></script>
     <script type="text/javascript" src="../js/loading.js"></script>
-    <script src="../js/clock.js"></script>
 
 
 </body>
