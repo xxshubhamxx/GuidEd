@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" href="../css/modebutton.css">
     <script type="text/javascript" src="../js/script.js"></script>
     <script type="text/javascript" src="../js/gsearch.js"></script>
-    <link rel="stylesheet" href="../css/clock.css">
     <style>
         :root {
             --numvar: 1;
@@ -43,6 +42,24 @@
         .left-col img[src="../images/icon/logo.png"] {
             width: 200px;
             filter: invert(var(--revnum)) !important;
+        }
+
+        iframe {
+            width: 1px;
+            min-width: 100%;
+            border: none;
+        }
+
+        body {
+            margin: 0;
+            height: auto !important;
+            /* Essential for resizing */
+            min-height: 0 !important;
+            /* Essential for resizing */
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
         }
     </style>
 </head>
@@ -86,29 +103,21 @@
             </div>
         </div>
     </header>
-
+    <iframe id="#tourTaskIframe" style="width: 97vw; height: 100vh;" src="mainmagic.html" frameborder="1"></iframe>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js"></script>
+    <script>
+        iFrameResize({
+            heightCalculationMethod: 'bodyOffset'
+        }, '#tourTaskIframe');
+    </script>
 
     <!-- MAIN Heading of Page -->
-    <div id="main-content-wrap" style="margin-left: 36vw; margin-top: 30vh;">
+    <!-- <div id="main-content-wrap" style="margin-left: 36vw; margin-top: 30vh;">
         <div class="title"></div>
-        <div id="main-clock-wrap">
-            <div class="clock">
-
-                <div class="hour">
-                    <div class="hr" id="hr"></div>
-                </div>
-
-                <div class="min">
-                    <div class="mn" id="mn"></div>
-                </div>
-
-                <div class="sec">
-                    <div class="sc" id="sc"></div>
-                </div>
-
-            </div>
+        <div id="main-magic-wrap">
+           <iframe style="width: 60vw; height: 100vh;" src="mainmagic.html" frameborder="1"></iframe>
         </div>
-    </div>
+    </div> -->
 
 
     <!-- FOOTER -->
@@ -147,7 +156,19 @@
 
     <script src="../js/modebutton.js"></script>
     <script type="text/javascript" src="../js/loading.js"></script>
-    <script src="../js/clock.js"></script>
+    <script>
+        // window.onload = disableScroll;
+        function disableScroll() {
+            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+
+                // if any scroll is attempted, set this to the previous value
+                window.onscroll = function () {
+                    window.scrollTo(scrollLeft, scrollTop);
+                }
+        }
+
+    </script>
 
 
 
