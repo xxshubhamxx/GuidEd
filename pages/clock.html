@@ -4,12 +4,12 @@
 <head>
     <link rel="stylesheet" type="text/css" href="../css/loading.css">
     <link rel="shortcut icon" type="png" href="../images/icon/favicon.png">
-    <title>Computer Science Courses on Edu-Learning</title>
+    <title>Analog Clock</title>
     <link rel="stylesheet" type="text/css" href="../css/pages.css">
     <link rel="stylesheet" type="text/css" href="../css/modebutton.css">
     <script type="text/javascript" src="../js/script.js"></script>
     <script type="text/javascript" src="../js/gsearch.js"></script>
-    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="../css/clock.css">
     <style>
         :root {
             --numvar: 1;
@@ -18,7 +18,7 @@
 
         html,
         img,
-        #Edu-Learning-logo{
+        #Edu-Learning-logo {
             filter: invert(var(--numvar)) !important;
         }
 
@@ -45,7 +45,6 @@
             filter: invert(var(--revnum)) !important;
         }
     </style>
-    <link rel="stylesheet" href="../css/clock.css">
 </head>
 
 <body>
@@ -90,109 +89,30 @@
 
 
     <!-- MAIN Heading of Page -->
-    <div id="main-content-wrap">
-        <div class="title">
-            <span> View Projects made by<br>students on Edu-Learning</span>
-            <div class="shortdesc">
-                <p>This page contains many projects made by our students<br>to motivate you to create your own projects
-                </p>
-            </div>
-        </div>
+    <div id="main-content-wrap" style="margin-left: 75vh; margin-top: 30vh;">
+        <div class="title"></div>
+        <div id="main-clock-wrap">
+            <div class="clock">
 
-        <!-- Main coontent of the page -->
+                <div class="hour">
+                    <div class="hr" id="hr"></div>
+                </div>
 
-        <div class="project_wrap">
-            <div class="project" onclick="window.location='clock.html';">
-                <div class="project-display" style=" max-height: 250px;">
-                    <div style="transform: translateY(-50px);">
-                    <div id="main-clock-wrap" style="transform: scale(0.5);">
-                        <div class="clock">
-            
-                            <div class="hour">
-                                <div class="hr" id="hr"></div>
-                            </div>
-            
-                            <div class="min">
-                                <div class="mn" id="mn"></div>
-                            </div>
-            
-                            <div class="sec">
-                                <div class="sc" id="sc"></div>
-                            </div>
-            
-                        </div>
-                    </div>
+                <div class="min">
+                    <div class="mn" id="mn"></div>
                 </div>
-                </div>
-                <div class="project-desc">
-                    <h1>Analog Clock</h1>
-                    <p> An Analog clock made using  <p>
-                    <p> basic and intermediate features <p>
-                    <p> of HTML, CSS and JavaScript</p>
-                </div>
-            </div>
 
-            <div class="project">
-                <div class="project-display">
-                    <img src="https://source.unsplash.com/1600x900/?nature,animal">
+                <div class="sec">
+                    <div class="sc" id="sc"></div>
                 </div>
-                <div class="project-desc">
-                    <h1>Bitter Typeface</h1>
-                    <p>Body Text
-                    <p>
-                </div>
-            </div>
 
-            <div class="project">
-                <div class="project-display">
-                    <img src="https://source.unsplash.com/1600x900/?nature,bird">
-                </div>
-                <div class="project-desc">
-                    <h1>Bitter Typeface</h1>
-                    <p>Body Text
-                    <p>
-                </div>
-            </div>
-        </div>
-        <div class="project_wrap">
-            <div class="project">
-                <div class="project-display">
-                    <img src="https://source.unsplash.com/1600x900/?nature,water">
-                </div>
-                <div class="project-desc">
-                    <h1>Bitter Typeface</h1>
-                    <p>Body Text
-                    <p>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-display">
-                    <img src="../images/courses/algo-course.jpg">
-                </div>
-                <div class="project-desc">
-                    <h1>Bitter Typeface</h1>
-                    <p>Body Text
-                    <p>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-display">
-                    <img src="https://source.unsplash.com/1600x900/?nature,bird">
-                </div>
-                <div class="project-desc">
-                    <h1>Bitter Typeface</h1>
-                    <p>Body Text
-                    <p>
-                </div>
             </div>
         </div>
     </div>
 
 
     <!-- FOOTER -->
-    <footer>
+    <!-- <footer>
         <div class="footer-container">
             <div class="left-col">
                 <img src="../images/icon/logo.png">
@@ -223,11 +143,12 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <script src="../js/modebutton.js"></script>
     <script type="text/javascript" src="../js/loading.js"></script>
     <script src="../js/clock.js"></script>
+
 
 
 </body>

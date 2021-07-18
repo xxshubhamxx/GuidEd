@@ -70,6 +70,7 @@ a {
 .project:hover .project-display {
     border-color: #212121;
     transform: rotateX(-20deg) rotateY(15deg);
+    /* display: none; */      /*For a different animation*/
 }
 
 .project:hover .project-display img {
