@@ -35,6 +35,13 @@ a {
     font-family: "Roboto", "sans-serif";
 }
 
+button{
+    cursor: pointer;
+}
+
+button[style="padding: 7px 15px;"]:hover{
+    filter: brightness(50%);
+}
 
 .project_wrap {
     width: 90%;
