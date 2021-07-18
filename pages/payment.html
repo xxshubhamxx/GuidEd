@@ -5,39 +5,12 @@
 	<link rel="shortcut icon" type="png" href="../images/icon/favicon.png">
 	<title>Computer Science Courses on Edu-Learning</title>
 	<link rel="stylesheet" type="text/css" href="../css/pages.css">
+	<link rel="stylesheet" href="../css/modebutton.css">
 	<script type="text/javascript" src="../js/script.js"></script>
-	<style>
-		:root{
-			--numvar: 1;
-		}
-		html,
-		img,
-		#Edu-Learning-logo,
-		iframe {
-			filter: invert(var(--numvar)) !important;
-		}
-
-		footer {
-			filter: invert(var(--numvar));
-		}
-
-		.left-col {
-			filter: invert(var(--numvar));
-		}
-
-		.rights-text,
-		.change-filter {
-			filter: invert(var(--numvar));
-		}
-
-		html {
-			margin-left: 2.5px;
-			margin-right: 2.5px;
-		}
-	</style>
+	<link rel="stylesheet" href="../css/payment.css">
 </head>
 
-<body data-new-gr-c-s-check-loaded="14.989.0" data-gr-ext-installed="">
+<body>
 
 	<!-- NAVIGATION -->
 	<header>
@@ -45,10 +18,23 @@
 			<div id="Edu-Learning-logo">
 				<a href="../index.html"><img src="../images/icon/logo.png" style="width: 120px;"></a>
 			</div>
+			<div class="sliding-switch">
+				<input type="checkbox" id="btn" class="switch-checkbox" />
+				<div class="outer-switch-box">
+					<div class="inner-switch-box">
+						<span class="status-text checked-text" id="textp1">DM</span>
+						<span class="outer-button">
+							<span class="inner-button"></span>
+						</span>
+						<span class="status-text unchecked-text" id="textp2">LM</span>
+					</div>
+				</div>
+			</div>
 			<div class="switch-tab" id="switch-tab" onclick="switchTAB()"><img src="../images/icon/menu.png"></div>
 			<ul id="list-switch">
 				<li><a href="quiz.html"><img src="../images/courses/d1.png" class="icon">Daily Quiz</a></li>
-				<li><a href="video_lectures.html"><img src="../images/courses/computer.png" class="icon">Video Lectures</a></li>
+				<li><a href="video_lectures.html"><img src="../images/courses/computer.png" class="icon">Video
+						Lectures</a></li>
 				<li><a href="ds.html"><img src="../images/courses/data.png" class="icon">Data Structures</a></li>
 				<li><a href="algo.html"><img src="../images/courses/algo.png" class="icon">Algorithm</a></li>
 				<li><a href="#projects"><img src="../images/courses/projects.png" class="icon">Projects</a></li>
@@ -60,8 +46,8 @@
 		</div>
 	</header>
 
-    <div style="margin-top: 90px;"></div>
-    <iframe src="payment_details.html" width="1510vw" height="600vh" frameborder="0"></iframe>
+	<div style="margin-top: 90px;"></div>
+	<iframe id="myframe" src="payment_details.html" width="1510vw" height="600vh" frameborder="0"></iframe>
 
 
 	<!-- FOOTER -->
@@ -97,6 +83,7 @@
 			</div>
 		</div>
 	</footer> -->
+	<script src="../js/modebutton.js"></script>
 </body>
 
 </html>

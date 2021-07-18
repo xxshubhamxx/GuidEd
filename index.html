@@ -5,12 +5,13 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
 	<title>Edu-Learning</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/responsive.css">
-	<link rel="stylesheet" href="css/explore.css">
-	<link rel="stylesheet" href="css/modebutton.css">
-	<script type="text/javascript" src="js/script.js"></script>
-	<script type="text/javascript" src="js/gsearch.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="./css/explore.css">
+	<link rel="stylesheet" type="text/css" href="./css/modebutton.css">
+	<link rel="stylesheet" type="text/css" href="./css/loading.css">
+	<script type="text/javascript" src="./js/script.js"></script>
+	<script type="text/javascript" src="./js/gsearch.js"></script>
 	<script>
 		const nav = document.getElementsByTagName("nav")[0];
 		window.addEventListener("scroll", function () {
@@ -36,6 +37,7 @@
 </head>
 
 <body>
+	<div id="loader" class="center1"></div>
 	<!-- Navigation Bar -->
 	<header id="header">
 		<nav>
@@ -271,7 +273,7 @@
 	<div class="explore-swipe">
 		<div class="diffSection" id="explore_section">
 			<center>
-				<p style="font-size: 50px; padding: 100px; padding-bottom: 40px; color: #fff;">Explore Edu-Learning</p>
+				<p style="font-size: 50px; padding: 100px; padding-bottom: 40px; color: #fff; "> <span style="background-color: rgb(107, 107, 161);"> Explore Edu-Learning </span></p>
 			</center>
 		</div>
 		<a href="pages/computer_courses.html">
@@ -494,6 +496,7 @@
 	</footer>
 
 	<script src="js/modebutton.js"></script>
+	<script type="text/javascript" src="./js/loading.js"></script>
 
 
 </body>

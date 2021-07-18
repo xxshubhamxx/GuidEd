@@ -2,10 +2,11 @@
 
 :root{
     --numvar: 1;
+    --revnum: 0;
 }
 
 html {
-    filter: invert(0);
+    filter: invert(var(--numvar));
 }
 
 body {

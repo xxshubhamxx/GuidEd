@@ -9,7 +9,6 @@ document.getElementById("btn").addEventListener("click", change);
 // }
 
 function cmodemain(){
-    location.reload(); 
         // if (localStorage.getItem("clickc") == "false") {
     //     document.getElementById("btn").click();
     //     localStorage.setItem("clickc", "true");
@@ -36,6 +35,7 @@ function cmodemain(){
         let root = document.documentElement;
         root.style.setProperty("--numvar", num);
         root.style.setProperty("--revnum", rnum);
+        // document.getElementsByTagName('iframe')[0].contentWindow.style.display="none";
         console.log(num);
     
         // if (num == 0) {
@@ -46,6 +46,7 @@ function cmodemain(){
         //     });
         // }
         // }
+        location.reload(); 
 }
 
 function change() {
@@ -66,3 +67,5 @@ else if (num == 1) {
 let root = document.documentElement;
 root.style.setProperty("--numvar", num);
 root.style.setProperty("--revnum", rnum);
+
+// document.getElementsByTagName('iframe')[0].contentWindow.document.documentElement.style.setProperty("--numvar", num);

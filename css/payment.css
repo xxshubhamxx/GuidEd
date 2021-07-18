@@ -1,0 +1,29 @@
+:root {
+    --numvar: 1;
+    --revnum: 0;
+}
+
+html,
+img,
+#Edu-Learning-logo,
+iframe {
+    filter: invert(var(--numvar)) !important;
+}
+
+footer {
+    filter: invert(var(--numvar));
+}
+
+.left-col {
+    filter: invert(var(--numvar));
+}
+
+.rights-text,
+.change-filter {
+    filter: invert(var(--numvar));
+}
+
+html {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+}
