@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+a {
+    cursor: pointer;
+}
+
+.card {
+    display: block;
+    width: 95px;
+    min-height: 95px;
+    background: #f4f4f4;
+    padding: 1rem;
+    transition: all 250ms;
+    margin: 50px;
+}
+
+.card:hover, .card:focus {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    transform: translateY(-5px);
+}
+
+.card:active {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translateY(-2px);
+}
+
+.card-bel {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.card-ab {
+    box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.12), 0 -1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#main-content-wrap{
+    font-family: "Roboto", "sans-serif";
+}
+
+
+.project_wrap {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project {
+    position: relative;
+    width: 30%;
+    height: 20vw;
+    cursor: pointer;
+}
+
+.project-display {
+    border-style: solid;
+    border-color: rgba(33, 33, 33, 0);
+    border-width: 4px;
+    transform: rotateX(0deg) rotateY(0deg);
+    transition: all 300ms;
+}
+
+.project-display img {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    -webkit-filter: blur(0) hue-rotate(0);
+    filter: blur(0) hue-rotate(0);
+    transition: all 300ms;
+}
+
+.project:hover .project-display {
+    border-color: #212121;
+    transform: rotateX(-20deg) rotateY(15deg);
+}
+
+.project:hover .project-display img {
+    opacity: 0.2;
+    -webkit-filter: blur(1px) hue-rotate(200deg);
+    filter: blur(7px) hue-rotate(200deg);
+}
+
+.project-desc {
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    text-align: center;
+}
+
+.project-desc h1 {
+    font-size: 2em;
+    line-height: 2em;
+    font-weight: 700;
+    opacity: 0;
+    transform: translateY(80px);
+    transition: transform 300ms ease-in-out 50ms, opacity 300ms;
+}
+
+.project-desc p {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: transform 300ms ease-in-out 100ms, opacity 300ms 100ms;
+}
+
+.project:hover .project-desc {
+    opacity: 1;
+}
+
+.project:hover .project-desc h1, .project:hover .project-desc p {
+    transform: translateY(20px);
+    opacity: 1;
+}
