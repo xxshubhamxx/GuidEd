@@ -10,7 +10,7 @@ body {
     font-weight: 300;
     font-size: 12px;
     line-height: 30px;
-    color: gold;
+    color: black;
     background:linear-gradient(to right, #22b2bd 0%, #f0f333 100%);
 }
 
@@ -32,7 +32,7 @@ body {
 }
 
 #contact h3 {
-    color: #f96;
+    color: black;
     display: block;
     font-size: 30px;
     font-weight: 400;
