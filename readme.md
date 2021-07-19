@@ -3,7 +3,7 @@
 
 ## Description
 
-A intermediate level eLearning Website (used APIs and user's localstorage but no backend) with a many tutorials, interactive and Responsive Webpages, top-class animations and much more!
+A intermediate level eLearning Website (used APIs and user's localstorage but no backend) with a many tutorials, interactive and Responsive Webpages, top-class animations and much more! Due to no backend, we could not create a real working website but we tried our best to use 100% power of HTML, CSS and JS and their libraries to make the front-end of a real website.
 
 ## Acknowledgement
 
@@ -11,7 +11,7 @@ This web project has been completed due to combined efforts of Shubham, Abhiram,
 
 ## Duration
 
-This project was started on 1st June and was completed on 19th July. So, it took a total of 49 days to complete this project. However, a few sections embedded on the page were made earlier too.
+This project was started on 21st May and was completed on 19th July. So, it took a total of 60 days (or 2 months) to complete this project. However, a few sections embedded on the website were made earlier too.
 
 ## Previous Version
 
