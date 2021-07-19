@@ -11,11 +11,11 @@ This web project has been completed due to combined efforts of Shubham, Abhiram,
 
 ## Duration
 
-This project idea was finalised and coding was started on 21st May and the project was completed on 19th July. So, it took a total of 60 days (or 2 months) to create this project. However, a few sections embedded on the website were made earlier too. This includes Personal pages linked at main page in creator's section and C++ Project of Projects page. We don't plan to make any new commits to the GitHub repository or develop the website anytime in near future.
+This project idea was finalised and coding was started on 21st May and the project was completed on 19th July. So, it took a total of 60 days (or 2 months) to create this project. However, a few sections embedded on the website were made earlier too. This includes Personal pages linked at main page in creator's section and C++ Project of Projects page. Although, we had many ideas to implement on the website like custom cursor, new projects and many more that couldn't be done due to time restriction of 2 months and busy schedule of the creators, we don't plan to make any new commits to the GitHub repository or develop the website anytime in near future.
 
 ## Previous Version
 
-We created many webpage designs on figma and also many failed versions of the website before but they didn't work out. We would estimate an **average** of 200+ hours of work for all 5 creators of the website (includes coding, exploring and integrating the website).
+We created many webpage designs on figma and also many failed versions of the website before but they didn't work out. We would estimate that all the 5 creators devoted an **average** of 200+ hours to this project (includes coding, exploring and integrating the website).
 
 ## Live demo
 
