@@ -5,7 +5,7 @@
 
 html,
 img,
-#Edu-Learning-logo,
+#GuideEd-logo,
 iframe {
     filter: invert(var(--numvar)) !important;
 }
