@@ -11,7 +11,7 @@ body {
     font-size: 12px;
     line-height: 30px;
     color: gold;
-    background:linear-gradient(to right, #49e8f3 0%, #e4c84c 100%);
+    background:linear-gradient(to right, #22b2bd 0%, #f0f333 100%);
 }
 
 .container {
@@ -77,7 +77,7 @@ fieldset {
     cursor: pointer;
     width: 100%;
     border: none;
-    background: linear-gradient(to right, #49e8f3 0%, #e4c84c 100%);
+    background: linear-gradient(to right, #22b2bd 0%, #f0f333 100%);
     text-align: center;
     color: black;
     margin: 0 0 5px;
@@ -86,7 +86,7 @@ fieldset {
 }
 
 #contact button[type="reset"]:hover {
-    background: #09c;
+    background: #f0f333;
     -webkit-transition: background 0.3s ease-in-out;
     -moz-transition: background 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
@@ -102,7 +102,7 @@ fieldset {
     text-align: center;
     width: 100%;
     border: none;
-    background:linear-gradient(to right, #49e8f3 0%, #e4c84c 100%);
+    background:linear-gradient(to right, #22b2bd 0%, #f0f333 100%);
     color: black;
     margin: 0 0 5px;
     padding: 10px;
@@ -110,7 +110,7 @@ fieldset {
 }
 
 #contact button[type="submit"]:hover {
-    background: #09c;
+    background: #f0f333;
     -webkit-transition: background 0.3s ease-in-out;
     -moz-transition: background 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
