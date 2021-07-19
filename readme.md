@@ -11,7 +11,7 @@ This web project has been completed due to combined efforts of Shubham, Abhiram,
 
 ## Duration
 
-This project was started on 21st May and was completed on 19th July. So, it took a total of 60 days (or 2 months) to complete this project. However, a few sections embedded on the website were made earlier too.
+This project idea was finalised and coding was started on 21st May and the project was completed on 19th July. So, it took a total of 60 days (or 2 months) to create this project. However, a few sections embedded on the website were made earlier too. This includes Personal pages linked at main page in creator's section and C++ Project of Projects page. We don't plan to make any new commits to the GitHub repository or develop the website anytime in near future.
 
 ## Previous Version
 
@@ -21,14 +21,12 @@ We created many webpage designs on figma and also many failed versions of the we
 
 The website is live at www.elearningweb.tk so feel free to check it out by clicking [here](https://www.elearningweb.tk)
 
-
 ## Tech Stack
 
 **Client:** HTML, CSS, JavaScript
 
 **Server:** HTML, CSS, JavaScript
 
-  
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
