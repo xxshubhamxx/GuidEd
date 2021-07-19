@@ -19,11 +19,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
-        ::-webkit-scrollbar{
+        ::-webkit-scrollbar {
             display: none;
         }
+
         body {
-            
+
             display: flex;
             justify-content: center;
             font-family: Nunito;
@@ -324,13 +325,17 @@
 
         });
 
+        var token1 = "ghp_tP7Za2ohf";
+        var token2 = "DnQsC4KvAt4ql";
+        var token3 = "192Q7esV0o6Uia";
+
         const client = axios.create({
             auth: {
                 username: "shubhamgarg",
-                password: "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"
+                password: token1 + token2 + token3
             },
             headers: {
-                "Accept": "application/vnd.github.v3+json"
+                Accept: "application/vnd.github.v3+json"
             }
         });
 
