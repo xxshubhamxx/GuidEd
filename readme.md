@@ -15,7 +15,7 @@ This project idea was finalised and coding was started on 21st May and the proje
 
 ## Previous Version
 
-We created many webpage designs on figma and also many failed versions of the website before but they didn't work out. I would estimate an average of 200+ hours of work for all 5 creators of the website (includes coding, exploring and integrating the website).
+We created many webpage designs on figma and also many failed versions of the website before but they didn't work out. We would estimate an **average** of 200+ hours of work for all 5 creators of the website (includes coding, exploring and integrating the website).
 
 ## Live demo
 
