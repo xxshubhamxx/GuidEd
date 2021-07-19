@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="../css/payment_details.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-12">
+                <div class="card mx-auto">
+                    <p class="heading">PAYMENT DETAILS</p>
+                    <form action="" onsubmit="window.parent.location.href='./payment_successful.html' " class="card-details">
+                        <div class="form-group mb-0">
+                            <p class="text-warning mb-0">Card Number</p> 
+                            <input type="text" required name="card-num" placeholder="1234 5678 9012 3457" size="17" id="cno" minlength="19" maxlength="19" style="width: 13.5vw;">
+                                 <img src="https://img.icons8.com/color/48/000000/visa.png" width="64px" height="60px" />
+                        </div>
+                        <div class="form-group">
+                            <p class="text-warning mb-0">Cardholder's Name</p> <input type="text" name="name"
+                                placeholder="Name" size="17" required>
+                        </div>
+                        <div class="form-group pt-2">
+                            <div class="row d-flex">
+                                <div class="col-sm-4">
+                                    <p class="text-warning mb-0">Expiration</p> <input type="text" name="exp"
+                                        placeholder="MM/YYYY" size="7" id="exp" minlength="7" maxlength="7" required>
+                                </div>
+                                <div class="col-sm-3">
+                                    <p class="text-warning mb-0">Cvv</p> <input type="password" name="cvv"
+                                        placeholder="&#9679;&#9679;&#9679;" size="1" minlength="3" maxlength="4"
+                                        required>
+                                </div>
+                                <div class="col-sm-5 pt-0"> <button type="submit" class="btn btn-primary"><i
+                                            class="fas fa-arrow-right px-3 py-2"></i></button> </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Disabling Scroll: 
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+
+            // if any scroll is attempted, set this to the previous value
+            window.onscroll = function () {
+                window.scrollTo(scrollLeft, scrollTop);
+            };
+    </script>
+	<script src="../js/modebutton.js"></script>
+    <script>
+		var num = Number(localStorage.getItem('thisvarisgud4me'));
+		var rnum = 0;
+		if (num == 0) {
+			rnum = 1;
+		}
+		else if (num == 1) {
+			rnum = 0;
+		}
+		var root2 = document.documentElement;
+		root2.style.setProperty("--numvar", num);
+		root2.style.setProperty("--revnum", rnum);
+	</script>
+
+</body>
+
+</html>

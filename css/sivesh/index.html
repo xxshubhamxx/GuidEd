@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Store</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="slideshow.js"></script>
+   
+  </head>
+  <body>
+    <header>
+      
+      <nav>
+        <div class="side-menu">
+          <div class="side-menu-section">
+            <h2>Trending</h2>
+            <ul class="side-menu-list">
+              <li><a href="#bestsellers">Best Sellers</a></li>
+              <li><a href="#newarrivals">New Arrivals</a></li>
+              <li><a href="#upcoming">Upcoming</a></li>
+            </ul>
+          </div>
+          <div class="side-menu-section">
+            <h2>Filter</h2>
+            <ul class="side-menu-list">
+                    <li><a href="#algorithm">algorithm</a></li>
+                    <li><a href="#Artificial intelligence">Artificial intelligence</a></li>
+                    <li><a href="">Computer Modelling</a></li>
+                    <li><a href="">Database storage&
+                                            design
+                    </a></li>
+                    <li><a href="">Data Structures</a></li>
+                    <li><a href="">Graphic&Visualization</a></li>
+                    <li><a href="">Networking</a></li>
+                    <li><a href="">Object-oriented Software Design</a></li>
+                    <li><a href="">Operating Systems</a></li>
+                    <li><a href="">programming Languages</a></li>
+                    <li><a href="">Software Design& Engineering</a></li>
+                    <li><a href="">Web Development & Design</a></li>
+                    
+            </ul>
+          </div>
+        </div>
+        <div class="menu-icon">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="navbrand">
+          <a href="/"><img src="bsr.jpg" alt=""></a>
+        </div>
+        <div class="search-bar">
+          <input type="text" name="" placeholder="Search....." id="" />
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+        <ul class="nav-ul">
+          <li class="nav-li">
+            <a href="index.html"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li class="nav-li">
+            <a href="login.html">
+              <i  class="fas fa-sign-in-alt"></i> Login/Sign Up</a
+            >
+          </li>
+          <li class="nav-li">
+            <a href="/wishlist"> <i class="fas fa-file-word"></i> Wishlist</a>
+          </li>
+          <li class="nav-li">
+            <a href="/cart"><i class="fas fa-shopping-cart"></i>Cart</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="banner2.jpg" style="width: 600px;max-height: 140px;">
+        
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="banner1.jpg" style="width: 600px;max-height:block size">
+        
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="banner4.jpg" style="width: 600px;max-height:150px">
+        
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+      
+    <div class="headings"><b>Bestsellers</b></div>
+    
+    
+    <!---bestsellers-->
+    
+    <div class="container" id="bestsellers">
+      
+        <div class="products__container">
+        
+            <div class="product__box">
+              <div class="product__img1"></div>
+              <div class="product__title"><h2>Computer system and network security</div>
+              <div class="product__description">
+                <p>₹500 only<pre><del>₹800</del></pre></p>
+              </div>
+              <div class="product__buttons" >
+                <a href="buynow.html" target="_blank">Buy Now</a>
+                <a href="/product/addtocart/:id">Add To Cart</a>
+              </div>
+            </div>
+            <div class="product__box">
+              <div class="product__img2"></div>
+              <div class="product__title"><h2>Arihant's handbook for cracking exams</div>
+              <div class="product__description">
+                <p>₹600 only<pre><del>₹900</del></pre></p>
+              </div>
+              <div class="product__buttons" >
+                <a href="buynow.html" target="_blank">Buy Now</a>
+                <a href="/product/addtocart/:id">Add To Cart</a>
+              </div>
+            </div>
+            <div class="product__box">
+              <div class="product__img3"></div>
+              <div class="product__title"><h2>Arihant for computer awareness</div>
+              <div class="product__description">
+                <p>₹300 only<pre><del>₹500</del></pre></p>
+              </div>
+              <div class="product__buttons" >
+                <a href="buynow.html" target="_blank">Buy Now</a>
+                <a href="/product/addtocart/:id">Add To Cart</a>
+              </div>
+            </div>
+            <div class="product__box">
+              <div class="product__img4"></div>
+              <div class="product__title"><h2>computer applications</div>
+              <div class="product__description">
+                <p>₹400 only<pre><del>₹500</del></pre></p>
+              </div>
+              <div class="product__buttons" >
+                <a href="buynow.html" target="_blank">Buy Now</a>
+                <a href="/product/addtocart/:id">Add To Cart</a>
+              </div>
+            </div>
+            <div class="product__box">
+              <div class="product__img5"></div>
+              <div class="product__title"><h2>self preparation</div>
+              <div class="product__description">
+                <p>₹700 only<pre><del>₹1000</del></pre></p>
+              </div>
+              <div class="product__buttons" >
+                <a href="buynow.html" target="_blank">Buy Now</a>
+                <a href="/product/addtocart/:id">Add To Cart</a>
+              </div>
+            </div>
+            <div class="product__box">
+              <div class="product__img6"></div>
+              <div class="product__title"><h2>c++ programing</div>
+              <div class="product__description">
+                <p>₹800 only<pre><del>₹1000</del></pre></p>
+              </div>
+              <div class="product__buttons" >
+                <a href="buynow.js" target="_blank">Buy Now</a>
+                <a href="/product/addtocart/:id">Add To Cart</a>
+              </div>
+            </div>
+            <div class="product__box">
+              <div class="product__img7"></div>
+              <div class="product__title"><h2>computer basics</div>
+              <div class="product__description">
+                <p>₹800 only<pre><del>₹1100</del></pre></p>
+              </div>
+              <div class="product__buttons" >
+                <a href="" target="_blank">Buy Now</a>
+                <a href="/product/addtocart/:id">Add To Cart</a>
+              </div>
+            </div>
+            <div class="product__box">
+              <div class="product__img8"></div>
+              <div class="product__title"><h2>Sun Glasses</div>
+              <div class="product__description">
+                <p>₹600 only<pre><del>₹1100</del></pre></p>
+              </div>
+              <div class="product__buttons">
+                <a href="/product/buynow/:id">Buy Now</a>
+                <a href="/product/addtocart/:id">Add To Cart</a>
+              </div>
+            </div>
+            <div class="product__box">
+              <div class="product__img9"></div>
+              <div class="product__title"><h2>oracle</div>
+              <div class="product__description">
+                <p>₹900 only<pre><del>₹1100</del></pre></p>
+              </div>
+              <div class="product__buttons">
+                <a href="/product/buynow/:id">Buy Now</a>
+                <a href="/product/addtocart/:id">Add To Cart</a>
+              </div>
+            </div>
+           </div>
+        
+                
+                
+              </div>
+            </div>
+          
+        </div>
+      </div>
+      <!--new arrivals-->
+      <div class="headings">New Arrivals</div>
+      <div class="container" id="newarrivals">
+      
+        <div class="products__container">
+        
+            <div class="product__box">
+              <div class="product__img1"></div>
+              <div class="product__title"><h2>computer system </div>
+              <div class="product__description">
+                <p>₹600 only<pre><del>₹1500</del></pre></p>
+                
+              </div>
+              <div class="product__buttons" >
+                <a href="" target="_blank">Buy Now</a>
+                <a href="/product/addtocart/:id">Add To Cart</a>
+              </div>
+            </div>
+            <div class="product__box">
+              <div class="product__img3"></div>
+              <div class="product__title"><h2>computer awareness</div>
+              <div class="product__description">
+                <p>₹600 only<pre><del>₹1200</del></pre></p>
+              </div>
+              <div class="product__buttons" >
+                <a href="" target="_blank">Buy Now</a>
+                <a href="/product/addtocart/:id">Add To Cart</a>
+              </div>
+            </div>
+            <div class="product__box">
+              <div class="product__img2"></div>
+              <div class="product__title"><h2>Arihant</div>
+              <div class="product__description">
+                <p>₹500 only<pre><del>₹1500</del></pre></p>
+              </div>
+              <div class="product__buttons" >
+                <a href="" target="_blank">Buy Now</a>
+                <a href="/product/addtocart/:id">Add To Cart</a>
+              </div>
+            </div>
+            <div class="product__box">
+              <div class="product__img6"></div>
+              <div class="product__title"><h2>Sun Glasses</div>
+              <div class="product__description">
+                <p>₹600 only<pre><del>₹1500</del></pre></p>
+              </div>
+              <div class="product__buttons" >
+                <a href="" target="_blank">Buy Now</a>
+                <a href="/product/addtocart/:id">Add To Cart</a>
+              </div>
+            </div>
+            <div class="product__box">
+              <div class="product__img5"></div>
+              <div class="product__title"><h2>Sun Glasses</div>
+              <div class="product__description">
+                <p>₹600 only<pre><del>₹1500</del></pre></p>
+              </div>
+              <div class="product__buttons" >
+                <a href="" target="_blank">Buy Now</a>
+                <a href="/product/addtocart/:id">Add To Cart</a>
+              </div>
+            </div>
+            <div class="product__box">
+              <div class="product__img7"></div>
+              <div class="product__title"><h2>Sun Glasses</div>
+              <div class="product__description">
+                <p>₹600 only<pre><del>₹1500</del></pre></p>
+              </div>
+              <div class="product__buttons" >
+                <a href="" target="_blank">Buy Now</a>
+                <a href="/product/addtocart/:id">Add To Cart</a>
+              </div>
+            </div>
+            
+            </div>
+           </div>
+        
+                
+                
+              </div>
+            </div>
+          
+        </div>
+      </div>
+      <!--upcoming-->
+      <div class="headings">Upcoming</div>
+      <div class="container" id="upcoming">
+      
+        <div class="products__container">
+        
+            <div class="product__box">
+              <div class="product__img2"></div>
+              <div class="product__title"><h2>Sun Glasses</div>
+              <div class="product__description">
+                <p>₹600 only<pre><del>₹1500</del></pre></p>
+              </div>
+              <div class="product__buttons" >
+                <a href="" target="_blank">Buy Now</a>
+                <a href="/product/addtocart/:id">Add To Cart</a>
+              </div>
+            </div>
+            <div class="product__box">
+              <div class="product__img9"></div>
+              <div class="product__title"><h2>Sun Glasses</div>
+              <div class="product__description">
+                <p>₹600 only<pre><del>₹1500</del></pre></p>
+              </div>
+              <div class="product__buttons" >
+                <a href="" target="_blank">Buy Now</a>
+                <a href="/product/addtocart/:id">Add To Cart</a>
+              </div>
+            </div>
+            <div class="product__box">
+              <div class="product__img8"></div>
+              <div class="product__title"><h2>Sun Glasses</div>
+              <div class="product__description">
+                <p>₹600 only<pre><del>₹1500</del></pre></p>
+              </div>
+              <div class="product__buttons" >
+                <a href="" target="_blank">Buy Now</a>
+                <a href="/product/addtocart/:id">Add To Cart</a>
+              </div>
+            </div>
+            <div class="product__box">
+              <div class="product__img6"></div>
+              <div class="product__title"><h2>Sun Glasses</div>
+              <div class="product__description">
+                <p>₹600 only<pre><del>₹1500</del></pre></p>
+              </div>
+              <div class="product__buttons" >
+                <a href="" target="_blank">Buy Now</a>
+                <a href="/product/addtocart/:id">Add To Cart</a>
+              </div>
+            </div>
+            <div class="product__box">
+              <div class="product__img4"></div>
+              <div class="product__title"><h2>Sun Glasses</div>
+              <div class="product__description">
+                <p>₹600 only<pre><del>₹1500</del></pre></p>
+              </div>
+              <div class="product__buttons" >
+                <a href="" target="_blank">Buy Now</a>
+                <a href="/product/addtocart/:id">Add To Cart</a>
+              </div>
+            </div>
+            <div class="product__box">
+              <div class="product__img5"></div>
+              <div class="product__title"><h2>Sun Glasses</div>
+              <div class="product__description">
+                <p>₹600 only<pre><del>₹1500</del></pre></p>
+              </div>
+              <div class="product__buttons" >
+                <a href="" target="_blank">Buy Now</a>
+                <a href="/product/addtocart/:id">Add To Cart</a>
+              </div>
+            </div>
+            
+            </div>
+           </div>
+        
+                
+                
+              </div>
+            </div>
+          
+        </div>
+      </div>
+      <!--algorithms-->
+      <div class="headings">Algorithms</div>
+      <div class="container" id="algorithm">
+      
+        <div class="products__container">
+        
+            <div class="product__box">
+              <div class="product__img10"></div>
+              <div class="product__title"><h2>Sun Glasses</div>
+              <div class="product__description">
+                <p>₹600 only<pre><del>₹1500</del></pre></p>
+              </div>
+              <div class="product__buttons" >
+                <a href="" target="_blank">Buy Now</a>
+                <a href="/product/addtocart/:id">Add To Cart</a>
+              </div>
+            </div>
+            <div class="product__box">
+              <div class="product__img11"></div>
+              <div class="product__title"><h2>Sun Glasses</div>
+              <div class="product__description">
+                <p>₹600 only<pre><del>₹1500</del></pre></p>
+              </div>
+              <div class="product__buttons" >
+                <a href="" target="_blank">Buy Now</a>
+                <a href="/product/addtocart/:id">Add To Cart</a>
+              </div>
+            </div>
+           
+            <div class="product__box">
+              <div class="product__img12"></div>
+              <div class="product__title"><h2>Sun Glasses</div>
+              <div class="product__description">
+                <p>₹600 only<pre><del>₹1500</del></pre></p>
+              </div>
+              <div class="product__buttons" >
+                <a href="" target="_blank">Buy Now</a>
+                <a href="/product/addtocart/:id">Add To Cart</a>
+              </div>
+            </div>
+            
+            </div>
+           </div>
+        
+                
+                
+              </div>
+            </div>
+          
+        </div>
+      </div>
+      <!--artificial intel-->
+      <div class="headings">Artificial intelligence</div>
+      <div class="container" id="Artificial intelligence">
+      
+        <div class="products__container">
+        
+            <div class="product__box">
+              <div class="product__img13"></div>
+              <div class="product__title"><h2>Sun Glasses</div>
+              <div class="product__description">
+                <p>₹600 only<pre><del>₹1500</del></pre></p>
+              </div>
+              <div class="product__buttons" >
+                <a href="" target="_blank">Buy Now</a>
+                <a href="/product/addtocart/:id">Add To Cart</a>
+              </div>
+            </div>
+            <div class="product__box">
+              <div class="product__img14"></div>
+              <div class="product__title"><h2>Sun Glasses</div>
+              <div class="product__description">
+                <p>₹600 only<pre><del>₹1500</del></pre></p>
+              </div>
+              <div class="product__buttons" >
+                <a href="" target="_blank">Buy Now</a>
+                <a href="/product/addtocart/:id">Add To Cart</a>
+              </div>
+            </div>
+           
+            <div class="product__box">
+              <div class="product__img15"></div>
+              <div class="product__title"><h2>Sun Glasses</div>
+              <div class="product__description">
+                <p>₹600 only<pre><del>₹1500</del></pre></p>
+              </div>
+              <div class="product__buttons" >
+                <a href="" target="_blank">Buy Now</a>
+                <a href="/product/addtocart/:id">Add To Cart</a>
+              </div>
+            </div>
+            
+            </div>
+           </div>
+        
+                
+                
+              </div>
+            </div>
+          
+        </div>
+      </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
