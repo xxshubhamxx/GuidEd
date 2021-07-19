@@ -3,7 +3,11 @@
 
 ## Description
 
-Making a good eLearning Website with a few tutorials. Interactive and Responsive Webpages with many cool animations.
+A intermediate level eLearning Website (used APIs and user's localstorage but no backend) with a many tutorials, interactive and Responsive Webpages, top-class animations and much more!
+
+## Description
+
+This web project has been completed due to combined efforts of Shubham, Abhiram, Bhargav, Sivesh and Lohith 
 
 ## Previous Version
 
@@ -12,7 +16,6 @@ We created many webpage designs on figma and also many failed versions of the we
 ## Live demo
 
 The website is live at www.elearningweb.tk so feel free to check it out by clicking [here](https://www.elearningweb.tk)
-
 
 
 ## Tech Stack
