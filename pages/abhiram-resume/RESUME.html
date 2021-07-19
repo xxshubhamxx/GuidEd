@@ -1,0 +1,130 @@
+<!--https://youtu.be/OX6QP0TlvYs-->
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8"><title>Abhiram's Resume</title>
+	<style>
+		body {
+			margin: 0;
+			font-size: 15px;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.stick-up {
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+		.progress-container {
+			width: 100%;
+			height: 8px;
+			background: #ccc;
+		}
+		.progress-bar {
+			height: 8px;
+			background: #520909;
+			width: 0%;
+		}
+	</style>
+</head>
+<body bgcolor="D5D8DC"> <!--table colors - 1C2833 & F8F9F9--> <br><br><br><br><br><br>
+	<div class="stick-up">
+	  <div class="progress-container">
+		<div class="progress-bar" id="myBar"></div>
+	  </div>  
+	</div>
+	<table width="700px" height="800px" align="center">
+		<tr>
+			<td width="300px" bgcolor="#05170f" style="color:white;padding:20px;"> <br><br>
+				<img src="pro.jpg" style="border-radius:80%;" alt="Profile Picture" hspace="15%">
+				<h1><center>Personal<br>Dossier</center></h1><hr><br>
+				<p>
+					<b>Name:</b>
+					Abhiram S <br><br>
+					<b>Address:</b>
+					Akshayanagar, <br>
+					OFF BG Road, Bangalore <br><br>
+					<b>Ph. no.</b>
+					+91	99585 85858<br><br>
+					<b>e-mail address:</b>
+					abhiram123@gmail.com<br><br>
+					<b>linkedin:</b>
+					linkedin.com/in/abhiram123<br><br>
+					<b>DOB:</b>
+					06/07/2002<br><br><br>
+				</p>
+				<h2>Interests</h2><hr>
+				<p>Sports</p>
+				<p>Reading</p>
+				<p>Music</p><br><br>
+				<h2>Programming Languages</h2><hr>
+				<p><b>C:</b><br> <progress value="75" max="100"> </progress> </p>
+				<p><b>C++:</b><br> <progress value="60" max="100"> </progress> </p>
+				<p><b>C#:</b><br> <progress value="45" max="100"> </progress> </p>
+			</td>
+			<td width="600px" bgcolor="#f5fffa" style="color:grey;padding:30px;"><br>
+				<h1>Abhiram S</h1><hr><br><br>
+				<h2>Career Objective</h2><hr>
+				<p>Seeking a challenging position in an organization where I can use my talents and skills to grow and expand an organization as well as myself.</p><br>
+				<h2>Work Experience</h2><hr>
+				<h3>Junior Web Developer</h3>
+				<h5>LT&T Systems Private Limited</h5>
+				<p>I have a good experience working with other developers and designers to develop the website and applications. I also perform code reviews of source code submitted by other team members and outsourced development partners. I proactively report to management about work and maintain a good development process and workflow, including identifying and implementing optimizations.</p><br>
+				<h3>Website Analyst</h3>
+				<h5>HalfCute</h5>
+				<p>Responsible for developing and maintaining reference material and documentation, including user guide/help sites.
+				Proactively identify and implement actions to improve forecasting and reporting processes and overall forecasting accuracy, with
+				knowledge of or familiarity with online marketing; measurement, ad serving, and media buying and
+				documentation relating to existing processes and suggestion / presentations for improving those processes.</p>
+				<ul>
+					<li>Creating real-time webpages</li>
+					<li>Content marketing</li>
+					<li>Content management</li>
+					<li>Blog management</li>
+					<li>UI/UX front end designer</li>
+				</ul><br>
+				<h2>Education & qualification:</h2><hr><br>
+				<table border="3" width="400" align=center>
+					<tr>
+						<th>Qualification</th>
+						<th>Board</th>
+						<th>School/College</th>
+						<th>Year of passing</th>
+						<th>Percentage</th>
+					</tr>
+					<tr>
+						<th>10th</th>
+						<th>ICSE</th>
+						<th>Mitra Academy</th>
+						<th>2018</th>
+						<th>92%</th>
+					</tr>
+					<tr>
+						<th>12th</th>
+						<th>State Board</th>
+						<th>BASE PU College</th>
+						<th>2020</th>
+						<th>96%</th>
+					</tr>
+					<tr>
+						<th>B.Tech.</th>
+						<th>(Autonomous)</th>
+						<th>Amrita Vishwa Vidyapeetham</th>
+						<th>2024</th>
+						<th>94%</th>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table><br><br><br><br><br><br>
+	<script>
+	// When the user scrolls the page, execute myFunction 
+	window.onscroll = function() {myFunction()};
+
+	function myFunction() {
+	  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+	  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+	  var scrolled = (winScroll / height) * 100;
+	  document.getElementById("myBar").style.width = scrolled + "%";
+	}
+	</script>
+</body>
+</html>
