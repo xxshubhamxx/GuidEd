@@ -11,7 +11,7 @@ body {
     font-size: 12px;
     line-height: 30px;
     color: gold;
-    background:rgb(34, 226, 191) ;
+    background:linear-gradient(to right, #49e8f3 0%, #e4c84c 100%);
 }
 
 .container {
@@ -26,7 +26,7 @@ body {
 }
 
 #contact {
-    background: black;
+    background: white;
     padding: 25px;
     margin: 50px 0;
 }
@@ -77,7 +77,7 @@ fieldset {
     cursor: pointer;
     width: 100%;
     border: none;
-    background: gold;
+    background: linear-gradient(to right, #49e8f3 0%, #e4c84c 100%);
     text-align: center;
     color: black;
     margin: 0 0 5px;
@@ -102,7 +102,7 @@ fieldset {
     text-align: center;
     width: 100%;
     border: none;
-    background: gold;
+    background:linear-gradient(to right, #49e8f3 0%, #e4c84c 100%);
     color: black;
     margin: 0 0 5px;
     padding: 10px;
