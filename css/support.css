@@ -2,7 +2,7 @@
 
 * {
     box-sizing: border-box;
-    backgroud:rgb(34, 226, 191);
+    
 }
 
 body {
@@ -11,7 +11,7 @@ body {
     font-size: 12px;
     line-height: 30px;
     color: gold;
-    background: black;
+    background:rgb(34, 226, 191) ;
 }
 
 .container {
