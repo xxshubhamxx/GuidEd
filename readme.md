@@ -5,9 +5,9 @@
 
 A intermediate level eLearning Website (used APIs and user's localstorage but no backend) with a many tutorials, interactive and Responsive Webpages, top-class animations and much more!
 
-## Description
+## Acknowledgement
 
-This web project has been completed due to combined efforts of Shubham, Abhiram, Bhargav, Sivesh and Lohith 
+This web project has been completed due to combined efforts of Shubham, Abhiram, Bhargav, Sivesh and Lohith. We referred a lot of online resources like w3schools and communities like stackoverflow.com whenever we were stuck on something for a long time but this project is completely original and you can't find any similar project online that was published before this.
 
 ## Previous Version
 
