@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EnlighterJS with jQuery</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" />
+
+    <!-- EnlighterJS CSS !-->
+    <link rel="stylesheet" href="../css/cstring.css" />
+    <style>
+        ::-webkit-scrollbar{
+            display: none;
+        }
+        body{
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+
+                <pre data-enlighter-language="javascript" class="toggler">
+#include "stdio.h"
+void strcopy(char *, char *);           //First is source, second destination
+int strlength(char *);                  //Returns numerical length of string
+void strconcat(char *, char *, char *); //First 2 strings are concatenated into 3rd string
+int strcompare(char *, char *);         //Returns 1 if both strings are same, otherwise 0
+void strreverse(char *);                //Reverses the string
+void strlower(char *);                  //Converts the string into lowercase
+void strupper(char *);                  //Converts the string into uppercase
+int main()
+{
+    printf("\n---------- Strings in C ----------\n");
+    printf("\nEnter the string: ");
+    char a[21];
+    scanf("%20s", &a);
+    printf("Input string: %s", a);
+    char b[sizeof(a)];
+    strcopy(a, b);
+    printf("\nOutput copied string: %s", b);
+
+    printf("\n----------------------------------\n");
+    char strl[21];
+    printf("\nEnter the string whose length is to be calculated: ");
+    scanf("%20s", &strl);
+    int length;
+    length = strlength(strl);
+    printf("Length of %s is: %d", strl, length);
+
+    printf("\n----------------------------------\n");
+    char p[21], q[21];
+    printf("\nEnter the string to concatenate: ");
+    printf("\nString 1: ");
+    scanf("%20s", &p);
+    printf("String 2: ");
+    scanf("%20s", &q);
+    int totalsize = (sizeof(p) + sizeof(q));
+    char str_res[totalsize];
+    strconcat(p, q, str_res);
+    printf("Concatenated string: %s", str_res);
+
+    printf("\n----------------------------------\n");
+    char d[21], e[21];
+    printf("\nEnter the string to compare: ");
+    printf("\nString 1: ");
+    scanf("%20s", &d);
+    printf("String 2: ");
+    scanf("%20s", &e);
+    int check = strcompare(d, e);
+    if (check == 1)
+        printf("Both strings are same");
+    else
+        printf("Both strings are not same");
+
+    printf("\n----------------------------------\n");
+    char s[21];
+    printf("\nEnter the string to reverse: ");
+    scanf("%20s", &s);
+    strreverse(s);
+    printf("Reversed String: %s", s);
+
+    printf("\n----------------------------------\n");
+    char stlwr[21];
+    printf("\nEnter the string to convert to lowercase: ");
+    scanf("%20s", &stlwr);
+    strlower(stlwr);
+    printf("Resultant String: %s", stlwr);
+
+    printf("\n----------------------------------\n");
+    char stupr[21];
+    printf("\nEnter the string to convert to uppercase: ");
+    scanf("%20s", &stupr);
+    strupper(stupr);
+    printf("Resultant String: %s", stupr);
+
+    return 0;
+}
+
+void strcopy(char *a, char *b)
+{
+    for (int i = 0; a[i] != '\0'; i++)
+    {
+        b[i] = a[i];
+        if (a[i + 1] == '\0')
+            b[i + 1] = '\0'; //specifying end of string to avoid junk value here
+    }
+}
+
+int strlength(char *strl)
+{
+    int i = 0;
+    while (strl[i] != 0)
+    {
+        i++;
+    }
+    return i;
+}
+
+void strconcat(char *p, char *q, char *res)
+{
+    while (*p)
+    {
+        *res++ = *p++;
+    }
+    while (*q)
+    {
+        *res++ = *q++;
+    }
+    *res = '\0'; //specifying end of string to avoid junk value here
+}
+
+int strcompare(char *x, char *y)
+{
+    for (int i = 0; x[i] != '\0'; i++)
+    {
+        if (y[i] != x[i])
+        {
+            return 0;
+        }
+    }
+    return 1;
+}
+
+void strreverse(char *s)
+{
+    int i = 0, j = 0;
+    // printf("\n String: %s", s);
+    // printf("\n Char 1: %c", s[0]);
+
+    while (s[j] != 0)
+    {
+        j++;
+    }
+    // printf("\n test size : %d", j);
+    j--; //we dont want '\0' as first character in string
+    char temp;
+    while (i < j)
+    {
+        temp = s[i];
+        s[i] = s[j];
+        s[j] = temp;
+        i++;
+        j--;
+    }
+}
+
+void strlower(char *stlwr)
+{
+    while (*stlwr)
+    {
+        if (*stlwr <= 'Z' && *stlwr >= 'A')
+            *stlwr += 32;
+        *stlwr++;
+    }
+}
+
+void strupper(char *stupr)
+{
+    while (*stupr)
+    {
+        if (*stupr <= 'z' && *stupr >= 'a')
+            *stupr -= 32;
+        *stupr++;
+    }
+}
+             </pre>
+            </div>
+    </main>
+
+    <!-- load jQuery BEFORE EnlighterJS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+
+    <!-- EnlighterJS -->
+    <script type="text/javascript" src="../js/cstring.js"></script>
+
+    <script type="text/javascript">
+        jQuery(function (jq) {
+            jq('pre.toggler').enlight({
+                theme: 'monokai'
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
