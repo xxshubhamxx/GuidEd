@@ -33,7 +33,9 @@ We created many webpage designs on figma and also many failed versions of the we
 
 ## Live demo
 
-The website is live at www.elearningweb.tk so feel free to check it out by clicking [here](https://www.elearningweb.tk)
+The website is live at www.elearningweb.tk so feel free to check it out by clicking [here](https://www.elearningweb.tk).
+ <br>
+Click [here](https://github.com/xxshubhamxx/UID-Project) to view the GitHub Repository. The link is https://github.com/xxshubhamxx/UID-Project
 
 ## Tech Stack
 
