@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Scroll Magic</title>'<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script><style>.red-cube{background:red;margin:0 auto;display:block;padding:40px 0;text-align:center;color:#fff;font-size:40px;font-weight:700;opacity:0;transition:1s;width:30%}.red-cube.show{opacity:1!important;width:100%}</style></head><body><!-- <div class="title ">Scroll Down to View the Animation based on scroll level using magicScroll.js</div> --><div style="font-size:45px;margin-top:25vh;position:fixed;z-index:-1;margin-left:30px">Scroll Down</div><div style="font-size:30px;margin-top:31.7vh;position:fixed;z-index:-1;margin-left:30px">to view the animation</div><div style="height:740px"></div><div class="red-cube" id="s1">Scroll Magic</div><div style="height:740px"></div><script>function isInt(value) {
+            return !isNaN(value) && (function (x) { return (x | 0) === x; })(parseFloat(value))
+        }
+        var distanceTrigger = 127;
+        var userInput = prompt("Please enter the numerical length (100-400 is recommended) for trigger to last (in px): ");
+        if (isInt(userInput))
+            distanceTrigger = userInput;
+        else
+            alert("Invalid Input, considering default value (127px)")
+        var controller = new ScrollMagic.Controller({ globalSceneOptions: { duration: distanceTrigger } }); 
+        // var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 450}});
+        var scene = new ScrollMagic.Scene({
+            triggerElement: "#s1",
+            triggerHook: "0.7"
+        })
+            .setClassToggle(".red-cube", "show")
+            .addIndicators()
+            .addTo(controller);</script></body></html>
