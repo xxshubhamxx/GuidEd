@@ -14,6 +14,9 @@
 | Personal Website under Follow Button on index.html               |                                               |                                               |                                               |                                        |
 | Video Players Pages                                              |                                               |                                               |                                               |                                        |
 
+Integration - Shubham and Abhiram
+
+
 ## Description
 
 A intermediate level eLearning Website (used APIs and user's localstorage but no backend) with a many tutorials, interactive and Responsive Webpages, top-class animations and much more! Due to no backend, we could not create a real working website but we tried our best to use 100% power of HTML, CSS and JS and their libraries to make the front-end of a real website.
