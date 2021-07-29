@@ -1,6 +1,18 @@
 
 # eLearning Website
 
+## Credits
+
+|                   Shubham                          |            Abhiram                            |            Bhargav                            |            Sivesh                             |        Lohith                          |
+|----------------------------------------------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|----------------------------------------|
+| Video Lectures Page                                | Home Page                                     | Quiz Page                                     | Book Store Page                               | Data Structures Page                   |
+| Projects Page + All 6 Projects                     | Login/Sign Up Page                            | Quiz of all topics                            | Files present in css/sivesh/                  | Algorithms page                        |
+| Light mode-Dark mode button + Google Search        | Computer Courses Page                         | Integration of all quiz pages                 | 24x7 Online Support Page                      | Page under Follow button on index.html |
+| C++, HTML+CSS+JS, Javascript Compilers Pages       | Java and Python Compilers Pages               | Resume Page under Follow button on index.html | Resume Page under Follow button on index.html |                                        |
+| Payment Page + Payment Successful Page             | Resume page under Follow Button on index.html |                                               |                                               |                                        |
+| Interview Preparation Page                         |                                               |                                               |                                               |                                        |
+| Personal Website under Follow Button on index.html |                                               |                                               |                                               |                                        |
+
 ## Description
 
 A intermediate level eLearning Website (used APIs and user's localstorage but no backend) with a many tutorials, interactive and Responsive Webpages, top-class animations and much more! Due to no backend, we could not create a real working website but we tried our best to use 100% power of HTML, CSS and JS and their libraries to make the front-end of a real website.
