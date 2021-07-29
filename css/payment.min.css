@@ -1,0 +1,1 @@
+:root{--numvar:1;--revnum:0}#GuideEd-logo,html,iframe,img{filter:invert(var(--numvar))!important}footer{filter:invert(var(--numvar))}.left-col{filter:invert(var(--numvar))}.change-filter,.rights-text{filter:invert(var(--numvar))}html{margin-left:2.5px;margin-right:2.5px}
